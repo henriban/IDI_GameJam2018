@@ -5,8 +5,10 @@ using UnityEngine;
 public class Player : Character {
 
     [SerializeField] private LayerMask groundMask;
+    [SerializeField] private LayerMask enemyMask;
 
-	public static Player player;
+
+    public static Player player;
 
     private Rigidbody2D rb2d;
     private BoxCollider2D bc2d;
@@ -19,6 +21,8 @@ public class Player : Character {
     private int activeCostume;
 
     private Collider2D firstOverlappingGroundCollider;
+
+    private float faceDirection = 1.0f;
 
 
 	// Use this for initialization
@@ -36,8 +40,10 @@ public class Player : Character {
         spriteRenderer = GetComponent<SpriteRenderer>();
 		hats = new List<Hat_Interface>();
 		costumes = new List<Costume_Interface>();
+        costumes.Add(new FighterCostume());
         activeHat = 0;
         activeCostume = 0;
+        
 	}
 
 	private void Update() {
@@ -71,6 +77,11 @@ public class Player : Character {
 		if(Input.GetKeyDown(KeyCode.Space)) {
 			costumes[activeCostume].onSpecial(this);
 		}
+
+        if(Input.GetAxisRaw("Horizontal") != 0)
+        {
+            faceDirection = Input.GetAxisRaw("Horizontal");
+        }
 	}
 
 	// Update is called once per frame
@@ -99,6 +110,22 @@ public class Player : Character {
         return toJump;
     }
 
+    public void attack(float attackWidth)
+    {
+        
+        float pointXToCheck = rb2d.transform.position.x + (faceDirection * (spriteRenderer.bounds.extents.x + (attackWidth/2)));
+        float pointYToCheck = rb2d.transform.position.y + 0.1f;
+        Vector2 pointToCheck = new Vector2(pointXToCheck, pointYToCheck);
+
+        Vector2 attackSize = new Vector2(attackWidth, spriteRenderer.bounds.size.y);
+
+        Collider2D[] firstEnemyCollider = Physics2D.OverlapBoxAll(pointToCheck, attackSize, 0.0f, enemyMask);
+        foreach (Collider2D collider in firstEnemyCollider){
+            collider.GetComponent<Character>().takeDamage(getAttackDamage());
+        }
+
+    }
+
     private bool canMoveHorizontaly(float direction)
     {
         if (direction > 0) {
@@ -114,5 +141,10 @@ public class Player : Character {
 
         bool toMove = firstOverlappingGroundCollider == null;
         return toMove;
+    }
+
+    public float getDirection()
+    {
+        return faceDirection;
     }
 }

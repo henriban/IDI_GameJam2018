@@ -12,14 +12,14 @@ public class FighterCostume : MonoBehaviour, Costume_Interface {
         return damage;
     }
 
-    public void onEquip(Player p)
+    public string getName()
     {
-        throw new NotImplementedException();
+        return "fighter";
     }
 
     public void onSpecial(Player p)
     {
-        throw new NotImplementedException();
+        p.attack(10.0f);
     }
 
     // Use this for initialization

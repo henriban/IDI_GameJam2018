@@ -12,14 +12,9 @@ public class Character : MonoBehaviour {
   [SerializeField] private float attackSpeed;
 
 
-	public void takeDamage()
+	public void takeDamage(int damageDone)
 	{
-       
-	}
-
-	public void onHit()
-	{
-		takeDamage();
+        Debug.Log("I did damage");
 	}
 
     public void jump(Rigidbody2D body){
@@ -35,5 +30,9 @@ public class Character : MonoBehaviour {
 		this.attackDamage = attackDamage;
 	}
 
+    public int getAttackDamage()
+    {
+        return attackDamage;
+    }
 
 }
