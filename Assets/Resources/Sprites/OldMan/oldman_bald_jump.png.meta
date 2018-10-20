@@ -1,15 +1,13 @@
 fileFormatVersion: 2
-guid: 76d120e70f7234ba5ad0726992461b7d
+guid: 6399520c913d81848899ca06b1761559
 TextureImporter:
   fileIDToRecycleName:
-    21300000: DefaulOldMan_0
-    21300002: DefaulOldMan_1
-    21300004: DefaulOldMan_2
-    21300006: DefaulOldMan_3
-    21300008: DefaulOldMan_4
-    21300010: DefaulOldMan_5
-    21300012: DefaulOldMan_6
-    21300014: DefaulOldMan_7
+    21300000: oldman_bald_jump_0
+    21300002: oldman_bald_jump_1
+    21300004: oldman_bald_jump_2
+    21300006: oldman_bald_jump_3
+    21300008: oldman_bald_jump_4
+    21300010: oldman_bald_jump_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -69,9 +67,9 @@ TextureImporter:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -80,9 +78,9 @@ TextureImporter:
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -92,161 +90,121 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DefaulOldMan_0
+      name: oldman_bald_jump_0
       rect:
         serializedVersion: 2
         x: 11
         y: 3
-        width: 11
+        width: 10
         height: 22
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0feeb8cac6b89454093807bd93d197d8
+      spriteID: 1252c5e57572647c8bf558d9ac521a29
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefaulOldMan_1
+      name: oldman_bald_jump_1
       rect:
         serializedVersion: 2
         x: 43
-        y: 4
-        width: 11
+        y: 3
+        width: 10
         height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87866d030980e44e0b795cdda9bc9064
+      spriteID: 783544224ff97481795d0b7ae857c326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefaulOldMan_2
+      name: oldman_bald_jump_2
       rect:
         serializedVersion: 2
         x: 75
-        y: 4
-        width: 11
-        height: 21
+        y: 3
+        width: 10
+        height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2482c41c80934095a8ccf529fe5e95a
+      spriteID: f2087519db2f84631b01959f0b9a0fa5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefaulOldMan_3
+      name: oldman_bald_jump_3
       rect:
         serializedVersion: 2
         x: 108
         y: 3
         width: 9
-        height: 22
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eeab735c0ceeb42789b2d6814d0e7ec0
+      spriteID: 0f6f25301b03e4ab28c8ff87297f06b0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefaulOldMan_4
+      name: oldman_bald_jump_4
       rect:
         serializedVersion: 2
-        x: 140
+        x: 141
         y: 3
-        width: 10
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8dd10ffc2e15440abefd3a33089d277
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DefaulOldMan_5
-      rect:
-        serializedVersion: 2
-        x: 172
-        y: 4
-        width: 10
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 965fa8a7b23fa417b8423dc9f1a7e52c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DefaulOldMan_6
-      rect:
-        serializedVersion: 2
-        x: 204
-        y: 4
         width: 9
-        height: 21
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a7f7014d3da94392a0a6f32b693c1ab
+      spriteID: 7b8afd7028ce746c2b3ec7b1ec2f4eb8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DefaulOldMan_7
+      name: oldman_bald_jump_5
       rect:
         serializedVersion: 2
-        x: 235
+        x: 173
         y: 3
-        width: 10
-        height: 22
+        width: 9
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3213b4e2dea1e400d9dd3251bb94c33e
+      spriteID: daa4b0b4a66a344148521f9133623070
       vertices: []
       indices: 
       edges: []
@@ -254,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 85e38d068ee694747a5f7837f912114e
+    spriteID: 9bfa61935d7be1245990caf2b386194b
     vertices: []
     indices: 
     edges: []

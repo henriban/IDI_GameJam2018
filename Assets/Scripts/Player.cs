@@ -11,6 +11,8 @@ public class Player : Character {
     private Rigidbody2D rb2d;
     private BoxCollider2D bc2d;
     private SpriteRenderer spriteRenderer;
+    private Animator animator;
+    private AnimationClip animationClip;
 
 	private List<Hat_Interface> hats;
 	private List<Costume_Interface> costumes;
@@ -34,8 +36,14 @@ public class Player : Character {
         rb2d = GetComponent<Rigidbody2D>();
         bc2d = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-		hats = new List<Hat_Interface>();
+        animator = GetComponent<Animator>();
+        animationClip = GetComponent<AnimationClip>();
+
+        hats = new List<Hat_Interface>();
 		costumes = new List<Costume_Interface>();
+        hats.Add(new Bald());
+        hats.Add(new Propeller());
+        costumes.Add(new OldMan());
         activeHat = 0;
         activeCostume = 0;
 	}
@@ -55,6 +63,7 @@ public class Player : Character {
 			}
 
 			hats[activeHat].onEquip();
+            costumeChange();
 		}
 
 		//Costumes
@@ -66,13 +75,14 @@ public class Player : Character {
 				activeHat = 0;
 			}
 			setAttackDamage(costumes[activeCostume].getDamage());
+            costumeChange();
 		}
 
 		if(Input.GetKeyDown(KeyCode.Space)) {
 			costumes[activeCostume].onSpecial(this);
 		}
 	}
-
+    
 	// Update is called once per frame
 	void FixedUpdate () {
 
@@ -84,6 +94,7 @@ public class Player : Character {
 
         if (Input.GetAxis("Vertical") > 0 && canJump())
         {
+            print(spriteRenderer.bounds);
             base.jump(rb2d);
         }
 	}
@@ -92,11 +103,9 @@ public class Player : Character {
     {
         // Check if the point underneath the player is ground
         Vector2 position = rb2d.transform.position;
-        Vector2 pointToCheck = new Vector2(position.x, position.y - spriteRenderer.bounds.extents.y);
-        //Vector2 pointToCheck = new Vector2(position.x, position.y - bc2d.size.y / 2f - 0.1f);
+        Vector2 pointToCheck = new Vector2(position.x, position.y - bc2d.size.y * transform.localScale.y / 2f - 0.1f);
         firstOverlappingGroundCollider = Physics2D.OverlapCircle(pointToCheck, 0.1f, groundMask);
 
-        //print(getCostumeString());
         bool toJump = firstOverlappingGroundCollider != null;
         return toJump;
     }
@@ -110,17 +119,34 @@ public class Player : Character {
         }
         // Check if the given point next to the player is ground
         Vector2 position = rb2d.transform.position;
-        Vector2 pointToCheck = new Vector2(position.x + spriteRenderer.bounds.extents.x * direction, position.y);
+        Vector2 pointToCheck = new Vector2(position.x + bc2d.size.x * transform.localScale.x * direction, position.y);
         //firstOverlappingGroundCollider = Physics2D.OverlapCircle(pointToCheck, 0.1f, groundMask);
-        firstOverlappingGroundCollider = Physics2D.OverlapBox(pointToCheck, new Vector2(0.1f, spriteRenderer.bounds.extents.y * 2.0f - 0.1f), 0f, groundMask);
+        firstOverlappingGroundCollider = Physics2D.OverlapBox(pointToCheck, new Vector2(0.1f, bc2d.size.y * transform.localScale.y - 0.1f), 0f, groundMask);
 
         bool toMove = firstOverlappingGroundCollider == null;
         return toMove;
     }
 
     private string getCostumeString() {
-        string costume = costumes[activeCostume].getName();
-        string hat = hats[activeHat].getName();
-        return costume + hat;
+        string costume = costumes[activeCostume].getName().ToLower();
+        string hat = hats[activeHat].getName().ToLower();
+        return costume + "_" + hat;
+    }
+
+    private string getFolder() {
+        string costume = costumes[activeCostume].getName().ToLower();
+        switch(costume) {
+            case "oldman": return "OldMan";
+            case "fighter": return "Fighter";
+            case "baeblade": return "Baeblade";
+            case "princess": return "Princess";
+            case "firefighter": return "Firefighter";
+        }
+        return "";
+    }
+
+    private void costumeChange() {
+        ChangeCostume changeCostume = GetComponent<ChangeCostume>();
+        changeCostume.setSkinName(getFolder(), getCostumeString() + "_walk");
     }
 }
