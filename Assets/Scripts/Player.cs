@@ -69,7 +69,7 @@ public class Player : Character {
 		}
 
 		if(Input.GetKeyDown(KeyCode.Space)) {
-			costumes[activeCostume].onSpecial();
+			costumes[activeCostume].onSpecial(this);
 		}
 	}
 
