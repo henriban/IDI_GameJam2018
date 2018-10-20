@@ -96,6 +96,7 @@ public class Player : Character {
         //Vector2 pointToCheck = new Vector2(position.x, position.y - bc2d.size.y / 2f - 0.1f);
         firstOverlappingGroundCollider = Physics2D.OverlapCircle(pointToCheck, 0.1f, groundMask);
 
+        //print(getCostumeString());
         bool toJump = firstOverlappingGroundCollider != null;
         return toJump;
     }
@@ -115,5 +116,11 @@ public class Player : Character {
 
         bool toMove = firstOverlappingGroundCollider == null;
         return toMove;
+    }
+
+    private string getCostumeString() {
+        string costume = costumes[activeCostume].getName();
+        string hat = hats[activeHat].getName();
+        return costume + hat;
     }
 }
