@@ -8,7 +8,6 @@ public class Character : MonoBehaviour {
 	[SerializeField] private float movementSpeed;
 	[SerializeField] private float jumpForce;
 
-
 	public void TakeDamage()
 	{
        
@@ -28,4 +27,6 @@ public class Character : MonoBehaviour {
         body.velocity = new Vector2 (direction * movementSpeed, body.velocity.y);
 
     }
+
+
 }
