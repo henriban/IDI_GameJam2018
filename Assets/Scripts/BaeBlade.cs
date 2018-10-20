@@ -2,14 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HatTest : MonoBehaviour, Hat_Interface{
-	public void OnEquip()
-	{
+public class BaeBlade : MonoBehaviour, Costume_Interface {
+	public int getDamage() {
 		throw new System.NotImplementedException();
 	}
 
-	public void Unequip()
-	{
+	public string getName() {
+		throw new System.NotImplementedException();
+	}
+
+	public void onEquip(Player p) {
+		throw new System.NotImplementedException();
+	}
+
+	public void onSpecial(Player p) {
 		throw new System.NotImplementedException();
 	}
 

@@ -4,8 +4,10 @@ using UnityEngine;
 
 public interface Hat_Interface{
 
-    void OnEquip();
+	string getName();
 
-    void Unequip();
+    void onEquip();
+
+    void unequip();
 
 }
