@@ -18,6 +18,7 @@ public class Character : MonoBehaviour {
 	}
 
     public void jump(Rigidbody2D body){
+        body.velocity = new Vector2(body.velocity.x, 0.0f);
         body.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
 	}
 

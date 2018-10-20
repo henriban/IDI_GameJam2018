@@ -23,10 +23,12 @@ public class Player : Character {
     private Collider2D firstOverlappingGroundCollider;
 
     private float faceDirection = 1.0f;
+    private bool doubleJump = false;
+    private bool canDoubleJump = false;
+    private int numberOfJumps;
 
-
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		if(player == null) {
 			player = this;
 			DontDestroyOnLoad(this);
@@ -41,8 +43,10 @@ public class Player : Character {
 		hats = new List<Hat_Interface>();
 		costumes = new List<Costume_Interface>();
         costumes.Add(new FighterCostume());
+        hats.Add(new CatEars());
         activeHat = 0;
         activeCostume = 0;
+        numberOfJumps = 0;
         
 	}
 
@@ -95,12 +99,25 @@ public class Player : Character {
 
         if (Input.GetAxisRaw("Vertical") > 0.0f && canJump())
         {
+            canDoubleJump = false;
             base.jump(rb2d);
+            numberOfJumps += 1;
         }
-	}
+
+        if (Input.GetAxisRaw("Vertical") == 0.0f)
+        {
+            canDoubleJump = true;
+        }
+
+    }
 
     private bool canJump()
     {
+        if (doubleJump && numberOfJumps <= 1 && canDoubleJump)
+        {
+            return true;
+        }
+
         // Check if the point underneath the player is ground
         Vector2 position = rb2d.transform.position;
         Vector2 pointToCheck = new Vector2(position.x, position.y - spriteRenderer.bounds.extents.y);
@@ -109,6 +126,10 @@ public class Player : Character {
 
         //print(getCostumeString());
         bool toJump = firstOverlappingGroundCollider != null;
+        if (toJump){
+           numberOfJumps = 0;
+        }
+            
         return toJump;
     }
 
@@ -153,5 +174,10 @@ public class Player : Character {
         string costume = costumes[activeCostume].getName();
         string hat = hats[activeHat].getName();
         return costume + hat;
+    }
+
+    public void setDoubleJump(bool active)
+    {
+        doubleJump = active;
     }
 }
