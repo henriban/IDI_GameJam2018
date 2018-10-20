@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class Player : Character {
 
+    [SerializeField] private LayerMask groundMask;
+
 	public static Player player;
 
-    [SerializeField] private LayerMask groundMask;
-    [SerializeField] private GameObject groundChecker;
-
     private Rigidbody2D rb2d;
+    private BoxCollider2D bc2d;
+    private SpriteRenderer spriteRenderer;
 
 	private List<Hat_Interface> hats;
 	private List<Costume_Interface> costumes;
 
 	private int activeHat;
-	private int activeCostume;
+    private int activeCostume;
 
-    bool canJump() {
-        return rb2d.velocity.y == 0;
-    }
+    private Collider2D firstOverlappingGroundCollider;
+
 
 	// Use this for initialization
 	void Start () {
@@ -32,19 +32,54 @@ public class Player : Character {
 		}
 
         rb2d = GetComponent<Rigidbody2D>();
+        bc2d = GetComponent<BoxCollider2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 		hats = new List<Hat_Interface>();
 		costumes = new List<Costume_Interface>();
+        activeHat = 0;
+        activeCostume = 0;
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		//Inputs
 
-        base.moveHorizontal(rb2d, Input.GetAxis("Horizontal"));
+        //Inputs
+        if (Input.GetAxis("Horizontal") != 0 && canMoveHorizontaly(Input.GetAxis("Horizontal")))
+        {
+            base.moveHorizontal(rb2d, Input.GetAxis("Horizontal"));
+        }
 
         if (Input.GetAxis("Vertical") > 0 && canJump())
         {
             base.jump(rb2d);
         }
 	}
+
+    private bool canJump()
+    {
+        // Check if the point underneath the player is ground
+        Vector2 position = rb2d.transform.position;
+        Vector2 pointToCheck = new Vector2(position.x, position.y - spriteRenderer.bounds.extents.y);
+        firstOverlappingGroundCollider = Physics2D.OverlapCircle(pointToCheck, 0.1f, groundMask);
+
+        bool toJump = firstOverlappingGroundCollider != null;
+        return toJump;
+    }
+
+    private bool canMoveHorizontaly(float direction)
+    {
+        if (direction > 0) {
+            direction = 1;
+        } else {
+            direction = -1;
+        }
+        // Check if the given point next to the player is ground
+        Vector2 position = rb2d.transform.position;
+        Vector2 pointToCheck = new Vector2(position.x + spriteRenderer.bounds.extents.y * direction, position.y);
+        //firstOverlappingGroundCollider = Physics2D.OverlapCircle(pointToCheck, 0.1f, groundMask);
+        firstOverlappingGroundCollider = Physics2D.OverlapBox(pointToCheck, new Vector2(0.1f, spriteRenderer.bounds.extents.y * 2.0f - 0.1f), 0f, groundMask);
+
+        bool toMove = firstOverlappingGroundCollider == null;
+        return toMove;
+    }
 }
