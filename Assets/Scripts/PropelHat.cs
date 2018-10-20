@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CatEars : MonoBehaviour, Hat_Interface {
+public class PropelHat : MonoBehaviour, Hat_Interface {
 
 	// Use this for initialization
 	void Start () {
