@@ -19,7 +19,7 @@ public class Character : MonoBehaviour {
 
 	public void onHit()
 	{
-		TakeDamage();
+		takeDamage();
 	}
 
 
