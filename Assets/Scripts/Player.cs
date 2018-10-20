@@ -39,7 +39,40 @@ public class Player : Character {
         activeHat = 0;
         activeCostume = 0;
 	}
-	
+
+	private void Update() {
+
+		//Hats
+		if(Input.GetKeyDown(KeyCode.Q)) {
+
+			hats[activeHat].unequip();
+
+			if(activeHat < hats.Count - 1) {
+				activeHat++;
+			}
+			else {
+				activeHat = 0;
+			}
+
+			hats[activeHat].onEquip();
+		}
+
+		//Costumes
+		if(Input.GetKeyDown(KeyCode.E)) {
+			if(activeCostume < costumes.Count - 1) {
+				activeHat++;
+			}
+			else {
+				activeHat = 0;
+			}
+			setAttackDamage(costumes[activeCostume].getDamage());
+		}
+
+		if(Input.GetKeyDown(KeyCode.Space)) {
+			costumes[activeCostume].onSpecial(this);
+		}
+	}
+
 	// Update is called once per frame
 	void FixedUpdate () {
 

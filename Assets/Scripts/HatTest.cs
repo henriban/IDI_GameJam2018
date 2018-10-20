@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HatTest : MonoBehaviour, Hat_Interface{
-	public void OnEquip()
+	public void onEquip()
 	{
 		throw new System.NotImplementedException();
 	}
 
-	public void Unequip()
+	public void unequip()
 	{
 		throw new System.NotImplementedException();
 	}
