@@ -12,7 +12,6 @@ public class Character : MonoBehaviour {
     [SerializeField] private float attackSpeed;
 
 	public void TakeDamage()
-
 	{
        
 	}
@@ -21,7 +20,6 @@ public class Character : MonoBehaviour {
 	{
 		TakeDamage();
 	}
-
 
     public void jump(Rigidbody2D body){
         body.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
