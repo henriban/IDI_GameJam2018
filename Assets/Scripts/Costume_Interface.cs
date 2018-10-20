@@ -6,7 +6,7 @@ public interface Costume_Interface {
 	
     void onSpecial(Player p);
 
-	void onEquip(Player p);
+	string getName();
 
 	int getDamage();
 }
