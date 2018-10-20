@@ -4,7 +4,9 @@ using UnityEngine;
 
 public interface Costume_Interface {
 
-    void OnFire();
+    void onFire();
 
-    void OnSpecial();
+    void onSpecial();
+
+	int getDamage();
 }

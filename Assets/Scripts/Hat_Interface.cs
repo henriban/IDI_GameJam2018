@@ -4,8 +4,8 @@ using UnityEngine;
 
 public interface Hat_Interface{
 
-    void OnEquip();
+    void onEquip();
 
-    void Unequip();
+    void unequip();
 
 }
