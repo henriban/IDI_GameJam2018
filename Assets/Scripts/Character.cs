@@ -23,7 +23,7 @@ public class Character : MonoBehaviour {
 
     public void moveHorizontal(Rigidbody2D body, float direction) {
         body.velocity = new Vector2 (direction * movementSpeed, body.velocity.y);
-
+        GetComponent<SpriteRenderer>().flipX = direction < 0;
     }
 
 	public void setAttackDamage(int attackDamage) {

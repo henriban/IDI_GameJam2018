@@ -104,8 +104,10 @@ public class Player : Character {
         // Check if the point underneath the player is ground
         Vector2 position = rb2d.transform.position;
         Vector2 pointToCheck = new Vector2(position.x, position.y - spriteRenderer.bounds.extents.y);
+        //Vector2 pointToCheck = new Vector2(position.x, position.y - bc2d.size.y / 2f - 0.1f);
         firstOverlappingGroundCollider = Physics2D.OverlapCircle(pointToCheck, 0.1f, groundMask);
 
+        //print(getCostumeString());
         bool toJump = firstOverlappingGroundCollider != null;
         return toJump;
     }
@@ -135,16 +137,21 @@ public class Player : Character {
         }
         // Check if the given point next to the player is ground
         Vector2 position = rb2d.transform.position;
-        Vector2 pointToCheck = new Vector2(position.x + spriteRenderer.bounds.extents.y * direction, position.y);
+        Vector2 pointToCheck = new Vector2(position.x + spriteRenderer.bounds.extents.x * direction, position.y);
         //firstOverlappingGroundCollider = Physics2D.OverlapCircle(pointToCheck, 0.1f, groundMask);
         firstOverlappingGroundCollider = Physics2D.OverlapBox(pointToCheck, new Vector2(0.1f, spriteRenderer.bounds.extents.y * 2.0f - 0.1f), 0f, groundMask);
 
         bool toMove = firstOverlappingGroundCollider == null;
         return toMove;
     }
-
+  
     public float getDirection()
     {
         return faceDirection;
+     }
+    private string getCostumeString() {
+        string costume = costumes[activeCostume].getName();
+        string hat = hats[activeHat].getName();
+        return costume + hat;
     }
 }
