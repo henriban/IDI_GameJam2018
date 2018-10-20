@@ -93,7 +93,7 @@ public class Player : Character {
             base.moveHorizontal(rb2d, Input.GetAxis("Horizontal"));
         }
 
-        if (Input.GetAxis("Vertical") > 0.9f && canJump())
+        if (Input.GetAxisRaw("Vertical") > 0.0f && canJump())
         {
             base.jump(rb2d);
         }
