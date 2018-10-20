@@ -9,43 +9,43 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af7181f404f1447c0a7a17b3070b952b, type: 3}
-  m_Name: flatProfile_startWorld
+  m_Name: flatShapeProfile_skyWorld
   m_EditorClassIdentifier: 
   m_Angles:
   - m_Start: -45
     m_End: 45
     m_Order: 0
     m_Sprites:
-    - {fileID: 21300000, guid: ad99938072ee9f44d8a9d00cc94af8d8, type: 3}
+    - {fileID: 21300000, guid: 3be43b2e96973f04b9a09c72cb11c5a0, type: 3}
   - m_Start: 45
     m_End: 135
     m_Order: 0
     m_Sprites:
-    - {fileID: 21300000, guid: 88ddbb801a236e148ac01a6e57534ab8, type: 3}
+    - {fileID: 21300000, guid: a6b94b59e41de2741ac1a6672aa7a45a, type: 3}
   - m_Start: -135
     m_End: -45
     m_Order: 0
     m_Sprites:
-    - {fileID: 21300000, guid: 88ddbb801a236e148ac01a6e57534ab8, type: 3}
+    - {fileID: 21300000, guid: 1aa7ae440c5d99848b23e8d3d63f0b8e, type: 3}
   - m_Start: -225
     m_End: -135
     m_Order: 0
     m_Sprites:
-    - {fileID: 21300000, guid: c97798f27fa6384428eb1d7b288c0f0a, type: 3}
-  m_FillTexture: {fileID: 2800000, guid: c97798f27fa6384428eb1d7b288c0f0a, type: 3}
+    - {fileID: 21300000, guid: 5b9c192556b2f5d498bdd7b15e16f51d, type: 3}
+  m_FillTexture: {fileID: 2800000, guid: 45efa7de76eebb947be0573f0bc6dc63, type: 3}
   m_CornerSprites:
   - m_CornerType: 0
     m_Sprites:
-    - {fileID: 21300000, guid: 0a38cf8ccb918fe459fcbdea82766722, type: 3}
+    - {fileID: 21300000, guid: 7a98283b2c8e0824e95a16ca426c143b, type: 3}
   - m_CornerType: 1
     m_Sprites:
-    - {fileID: 21300000, guid: e98bf0eec55558241bc0c151017d6c2e, type: 3}
+    - {fileID: 21300000, guid: 6d4c69c834be9fc42a520850d2f7e38d, type: 3}
   - m_CornerType: 2
     m_Sprites:
-    - {fileID: 21300000, guid: fac6328fcd7e4b249812692df5107cee, type: 3}
+    - {fileID: 21300000, guid: 7e825603b1e538a4eab4f0f294eccf50, type: 3}
   - m_CornerType: 3
     m_Sprites:
-    - {fileID: 21300000, guid: 95c5a7ad476c63445be60be9bf28eb79, type: 3}
+    - {fileID: 21300000, guid: 10e7582f1ba91a94187b5e7792bc0671, type: 3}
   - m_CornerType: 4
     m_Sprites:
     - {fileID: 0}
