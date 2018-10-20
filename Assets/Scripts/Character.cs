@@ -8,14 +8,18 @@ public class Character : MonoBehaviour {
 	[SerializeField] private float movementSpeed;
 	[SerializeField] private float jumpForce;
 
-	public void TakeDamage()
+  [SerializeField] private int attackDamage;
+  [SerializeField] private float attackSpeed;
+
+	public void takeDamage()
+
 	{
        
 	}
 
-	public void OnHit()
+	public void onHit()
 	{
-		TakeDamage();
+		takeDamage();
 	}
 
 
@@ -27,6 +31,10 @@ public class Character : MonoBehaviour {
         body.velocity = new Vector2 (direction * movementSpeed, body.velocity.y);
 
     }
+
+	public void setAttackDamage(int attackDamage) {
+		this.attackDamage = attackDamage;
+	}
 
 
 }
