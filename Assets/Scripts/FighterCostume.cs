@@ -12,12 +12,12 @@ public class FighterCostume : MonoBehaviour, Costume_Interface {
         return damage;
     }
 
-    public void OnFire()
+    public void onEquip(Player p)
     {
         throw new NotImplementedException();
     }
 
-    public void OnSpecial()
+    public void onSpecial(Player p)
     {
         throw new NotImplementedException();
     }
