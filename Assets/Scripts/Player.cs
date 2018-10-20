@@ -175,6 +175,14 @@ public class Player : Character {
         return costume + hat;
     }
 
+    public void addHat(Hat_Interface hat) {
+        hats.Add(hat);
+    }
+
+    public void addCostume(Costume_Interface costume) {
+        costumes.Add(costume);
+    }
+
     public void setDoubleJump(bool active)
     {
         doubleJump = active;
