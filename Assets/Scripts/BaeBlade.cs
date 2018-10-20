@@ -7,6 +7,10 @@ public class BaeBlade : MonoBehaviour, Costume_Interface {
 		throw new System.NotImplementedException();
 	}
 
+	public string getName() {
+		throw new System.NotImplementedException();
+	}
+
 	public void onEquip(Player p) {
 		throw new System.NotImplementedException();
 	}
