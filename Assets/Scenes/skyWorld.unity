@@ -121,7 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 834928837}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 908483904}
   - component: {fileID: 908483903}
   - component: {fileID: 908483902}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: groundShape2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 1576407324}
   - component: {fileID: 1576407323}
   - component: {fileID: 1576407326}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: groundShape1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
