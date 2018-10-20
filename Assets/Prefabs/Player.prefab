@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 61737608223206556}
   - component: {fileID: 114799522366294136}
   - component: {fileID: 95046922300851990}
+  - component: {fileID: 114876006671583820}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -89,7 +90,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1419255702337312}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.41, y: -0.29, z: 0}
+  m_LocalPosition: {x: 4.01, y: 1.55, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 4549954670764328}
@@ -145,7 +146,7 @@ Camera:
   m_GameObject: {fileID: 1516726670782552}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
@@ -391,6 +392,17 @@ MonoBehaviour:
   enemyMask:
     serializedVersion: 2
     m_Bits: 0
+--- !u!114 &114876006671583820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1419255702337312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e353a030b8e3f894984b1784871b5c44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212772090005131192
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -425,7 +437,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 016c71258a174984692053e6b37e260e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
