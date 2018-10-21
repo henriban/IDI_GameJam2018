@@ -18,18 +18,21 @@ public class Player : Character {
 
 	private List<Hat_Interface> hats;
 	private List<Costume_Interface> costumes;
+    private ChangeCostume changeCostume;
 
-	private int activeHat;
+    private int activeHat;
     private int activeCostume;
 
     private Collider2D firstOverlappingGroundCollider;
 
     private float faceDirection = 1.0f;
+    private bool noJump = false;
     private bool doubleJump = false;
 	private bool wallJump = false;
     private bool canDoubleJump = false;
     private int numberOfJumps;
     private Vector2 startPos;
+    private Vector2 startSize;
 
     // Use this for initialization
     void Start () {
@@ -44,22 +47,18 @@ public class Player : Character {
         rb2d = GetComponent<Rigidbody2D>();
         bc2d = GetComponent<BoxCollider2D>();
         startPos = rb2d.position;
+        startSize = bc2d.size;
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         animationClip = GetComponent<AnimationClip>();
+        changeCostume = GetComponent<ChangeCostume>();
 
         hats = new List<Hat_Interface>();
 		costumes = new List<Costume_Interface>();
 
-        hats.Add(new Bald());
-        costumes.Add(new OldMan());
-
         activeHat = 0;
         activeCostume = 0;
         numberOfJumps = 0;
-
-
-		hats.Add(new KittyEars());
 
 	}
 
@@ -94,6 +93,7 @@ public class Player : Character {
 		}
 
 		if(Input.GetKeyDown(KeyCode.Space)) {
+            animator.SetTrigger("action");
 			costumes[activeCostume].onSpecial(this);
 		}
 
@@ -110,7 +110,9 @@ public class Player : Character {
 			base.moveHorizontal(rb2d, Input.GetAxis("Horizontal"));
 		}
 
+
 		if (Input.GetAxisRaw("Vertical") > 0.0f && canJump())
+
 		{
 			canDoubleJump = false;
 			base.jump(rb2d);
@@ -121,7 +123,7 @@ public class Player : Character {
 		{
 			canDoubleJump = true;
 		}
-	
+
 
 		if (Input.GetAxisRaw ("Vertical") > 0.0f && !canMoveHorizontaly (Input.GetAxis ("Horizontal")) && wallJump) {
 			rb2d.AddForce (new Vector2(10 * -getDirection(), 10), ForceMode2D.Impulse);
@@ -131,6 +133,11 @@ public class Player : Character {
 
     private bool canJump()
     {
+        if (noJump)
+        {
+            return false;
+        }
+
         if (doubleJump && numberOfJumps <= 1 && canDoubleJump)
         {
             return true;
@@ -207,12 +214,21 @@ public class Player : Character {
     }
 
     private void costumeChange() {
-        ChangeCostume changeCostume = GetComponent<ChangeCostume>();
         if (changeCostume)
         {
-            changeCostume.setSkinName(getFolder(), getCostumeString());
+            costumeTransform(getFolder(), getCostumeString());
         } else {
             throw new System.Exception("No costumes");
+        }
+    }
+
+    public void costumeTransform(string folder, string costume)
+    {
+        changeCostume.setSkinName(folder, costume);
+        if (costume.Contains("frog")) {
+            bc2d.size = new Vector2(0.3f, 0.25f);
+        } else {
+            bc2d.size = startSize;
         }
     }
 
@@ -240,4 +256,8 @@ public class Player : Character {
         setHitPoints(100);
     }
 
+    public void setNoJump(bool noJump)
+    {
+        this.noJump = noJump;
+    }
 }

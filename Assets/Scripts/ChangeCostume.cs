@@ -29,7 +29,10 @@ public class ChangeCostume : MonoBehaviour {
         }
         if (newSprite) {
             spriteRenderer.sprite = newSprite;
+        } else if (subSprites.Length != 0) {
+            spriteRenderer.sprite = subSprites[0];    
         }
+
         if (Input.GetKeyDown(KeyCode.P)) {
             print("Sprites/" + folder + "/" + skinName + "_" + spriteAction);
         }

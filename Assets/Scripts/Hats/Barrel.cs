@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class Barrel : MonoBehaviour, Hat_Interface {
 
+    float movementDebuff = 0.5f;
+
     public string getName() {
         return "big";
     }
 
     public void onEquip() {
-        // TODO: reset player to default
+        Player.player.setNoJump(true);
+        Player.player.setMovementSpeed(Player.player.getMovementSpeed() * movementDebuff);
     }
 
     public void unequip() {
-        return;
+        Player.player.setNoJump(false);
+        Player.player.setMovementSpeed(Player.player.getMovementSpeed() / movementDebuff);
     }
 
     // Use this for initialization

@@ -26,8 +26,8 @@ public class Slimon : Character {
 
     void FixedUpdate()
     {
-        float pointXToCheck = rb2d.transform.position.x + (moveDirection * (sprite.bounds.extents.x));
-        float pointYToCheck = rb2d.transform.position.y - sprite.bounds.extents.y;
+        float pointXToCheck = rb2d.transform.position.x + (moveDirection * (GetComponent<CircleCollider2D>().radius));
+        float pointYToCheck = rb2d.transform.position.y - GetComponent<CircleCollider2D>().bounds.extents.y;
 
         Vector2 pointToCheck = new Vector2(pointXToCheck, pointYToCheck);
 
