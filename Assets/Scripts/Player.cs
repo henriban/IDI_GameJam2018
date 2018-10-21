@@ -143,7 +143,7 @@ public class Player : Character {
 
         Collider2D[] firstEnemyCollider = Physics2D.OverlapBoxAll(pointToCheck, attackSize, 0.0f, enemyMask);
         foreach (Collider2D collider in firstEnemyCollider){
-            collider.GetComponent<Character>().takeDamage(getAttackDamage());
+            collider.GetComponent<Character>().takeDamage(getAttackDamage(), faceDirection);
         }
 
     }
