@@ -21,12 +21,17 @@ public class Character : MonoBehaviour {
         StartCoroutine("damagePush");
 
         Rigidbody2D charRb2d = gameObject.GetComponent<Rigidbody2D>();
-        charRb2d.AddForce(new Vector2(4.0f * direction, 0), ForceMode2D.Impulse);
+        charRb2d.AddForce(new Vector2(8.0f * direction, 0), ForceMode2D.Impulse);
 
         setHitPoints(getHitPoints() - damageDone);
         if(getHitPoints() <= 0)
         {
-            //Destroy(gameObject);
+            if (gameObject.tag == "Player")
+            {
+                gameObject.GetComponent<Player>().deathReset();
+            } else {
+                Destroy(gameObject);
+            }
         }
 	}
 
