@@ -5,8 +5,9 @@ using UnityEngine;
 public class BaeBlade : MonoBehaviour, Costume_Interface {
 
 	private int damage = 100;
-	private string name = "baeblade";
-	private float force = 13;
+	private string name = "Baeblade";
+	private float force = 30;
+
 	private float attackWidth = 0.5f;
 	private float time = 1f;
 	private float timer = 1f;
@@ -22,7 +23,15 @@ public class BaeBlade : MonoBehaviour, Costume_Interface {
 	public void onSpecial(Player p) {
 		if(timer == time) {
 			Rigidbody2D r2d = p.GetComponent<Rigidbody2D>();
-			r2d.AddForce(new Vector2(p.getDirection() * force, 10), ForceMode2D.Impulse);
+			r2d.sharedMaterial = (PhysicsMaterial2D) Resources.Load("BaeBlade");
+			int direction = (int)p.getDirection();
+			if(r2d.velocity.x > 0) {
+				direction = 1;
+			}
+			else if(r2d.velocity.x < 0) {
+				direction = -1;
+			}
+			r2d.AddForce(new Vector2(direction * force, 10), ForceMode2D.Impulse);
 			StartCoroutine(youSpinMeRightRounBBY(p));
 		}
 	}
@@ -36,6 +45,7 @@ public class BaeBlade : MonoBehaviour, Costume_Interface {
 		}
 
 		timer = time;
+		p.GetComponent<Rigidbody2D>().sharedMaterial = null;
 	}
 
 }
