@@ -19,7 +19,7 @@ public class FighterCostume : MonoBehaviour, Costume_Interface {
 
     public void onSpecial(Player p)
     {
-        p.attack(10.0f);
+        p.attack(3.0f);
     }
 
     // Use this for initialization

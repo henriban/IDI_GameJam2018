@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 90995243}
   - component: {fileID: 90995242}
   - component: {fileID: 90995244}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &282108956
 GameObject:
@@ -379,6 +379,21 @@ Prefab:
       propertyPath: enemyMask.m_Bits
       value: 512
       objectReference: {fileID: 0}
+    - target: {fileID: 114799522366294136, guid: fb726764445c346668d18bb9eed726b5,
+        type: 2}
+      propertyPath: canMove
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114799522366294136, guid: fb726764445c346668d18bb9eed726b5,
+        type: 2}
+      propertyPath: groundMask.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 114799522366294136, guid: fb726764445c346668d18bb9eed726b5,
+        type: 2}
+      propertyPath: enemyMask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb726764445c346668d18bb9eed726b5, type: 2}
   m_IsPrefabAsset: 0
@@ -394,7 +409,7 @@ GameObject:
   - component: {fileID: 1671879943}
   - component: {fileID: 1671879942}
   - component: {fileID: 1671879946}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,8 +524,9 @@ MonoBehaviour:
   hp: 0
   movementSpeed: 1.5
   jumpForce: 0
-  attackDamage: 0
+  attackDamage: 10
   attackSpeed: 0
+  canMove: 1
   groundMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 512

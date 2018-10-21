@@ -16,7 +16,7 @@ public class OldMan : MonoBehaviour, Costume_Interface {
 
     public void onSpecial(Player p)
     {
-        throw new System.NotImplementedException();
+        p.attack(1.0f);
     }
 
     // Use this for initialization

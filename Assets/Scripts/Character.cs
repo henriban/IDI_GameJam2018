@@ -10,23 +10,22 @@ public class Character : MonoBehaviour {
 
   [SerializeField] private int attackDamage;
   [SerializeField] private float attackSpeed;
-  [SerializeField] private bool canMove = false;
+  [SerializeField] private bool canMove = true;
 
 	public void takeDamage(int damageDone, float direction)
 	{
+
         Debug.Log("Getting hurt");
-
-
         setCanMove(false);
         StartCoroutine("damagePush");
-
+    
         Rigidbody2D charRb2d = gameObject.GetComponent<Rigidbody2D>();
-        charRb2d.AddForce(new Vector2(4.0f * direction, 0), ForceMode2D.Impulse);
+        charRb2d.AddForce(new Vector2(8.0f * direction, 0), ForceMode2D.Impulse);
 
         setHitPoints(getHitPoints() - damageDone);
         if(getHitPoints() <= 0)
         {
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
 	}
 
