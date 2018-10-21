@@ -642,6 +642,7 @@ GameObject:
   - component: {fileID: 1229886744}
   - component: {fileID: 1229886746}
   - component: {fileID: 1229886745}
+  - component: {fileID: 1229886747}
   m_Layer: 8
   m_Name: lava
   m_TagString: Untagged
@@ -734,6 +735,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1229886747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1229886743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abbb4d499277de948bd9d35c6de18674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  movementSpeed: 0
+  jumpForce: 0
+  attackDamage: 25
+  attackSpeed: 0
+  canMove: 0
 --- !u!1 &1235721862
 GameObject:
   m_ObjectHideFlags: 0
@@ -1193,6 +1211,7 @@ GameObject:
   - component: {fileID: 1571785215}
   - component: {fileID: 1571785218}
   - component: {fileID: 1571785217}
+  - component: {fileID: 1571785216}
   m_Layer: 8
   m_Name: lava
   m_TagString: Untagged
@@ -1214,6 +1233,23 @@ Transform:
   m_Father: {fileID: 2111717739}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1571785216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1571785214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abbb4d499277de948bd9d35c6de18674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  movementSpeed: 0
+  jumpForce: 0
+  attackDamage: 25
+  attackSpeed: 0
+  canMove: 0
 --- !u!61 &1571785217
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1295,6 +1331,7 @@ GameObject:
   - component: {fileID: 1626623707}
   - component: {fileID: 1626623709}
   - component: {fileID: 1626623708}
+  - component: {fileID: 1626623710}
   m_Layer: 8
   m_Name: lava
   m_TagString: Untagged
@@ -1387,6 +1424,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1626623710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1626623706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abbb4d499277de948bd9d35c6de18674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  movementSpeed: 0
+  jumpForce: 0
+  attackDamage: 25
+  attackSpeed: 0
+  canMove: 0
 --- !u!1 &1649479204
 GameObject:
   m_ObjectHideFlags: 0
@@ -1798,6 +1852,7 @@ GameObject:
   - component: {fileID: 1873712981}
   - component: {fileID: 1873712983}
   - component: {fileID: 1873712982}
+  - component: {fileID: 1873712984}
   m_Layer: 8
   m_Name: lava
   m_TagString: Untagged
@@ -1890,6 +1945,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1873712984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1873712980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abbb4d499277de948bd9d35c6de18674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  movementSpeed: 0
+  jumpForce: 0
+  attackDamage: 25
+  attackSpeed: 0
+  canMove: 0
 --- !u!1 &1938048762
 GameObject:
   m_ObjectHideFlags: 0
@@ -1900,6 +1972,7 @@ GameObject:
   - component: {fileID: 1938048763}
   - component: {fileID: 1938048765}
   - component: {fileID: 1938048764}
+  - component: {fileID: 1938048766}
   m_Layer: 8
   m_Name: lava
   m_TagString: Untagged
@@ -1991,6 +2064,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1938048766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1938048762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abbb4d499277de948bd9d35c6de18674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  movementSpeed: 0
+  jumpForce: 0
+  attackDamage: 25
+  attackSpeed: 0
+  canMove: 0
 --- !u!1 &2111717738
 GameObject:
   m_ObjectHideFlags: 0
