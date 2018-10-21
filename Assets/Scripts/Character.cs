@@ -10,7 +10,7 @@ public class Character : MonoBehaviour {
 
   [SerializeField] private int attackDamage;
   [SerializeField] private float attackSpeed;
-  [SerializeField] private bool canMove = false;
+  [SerializeField] private bool canMove = true;
 
 	public void takeDamage(int damageDone, float direction)
 	{
