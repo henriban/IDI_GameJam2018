@@ -2,15 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spikes : MonoBehaviour {
+public class Spikes : Character {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.collider.tag == "Player") {
+            collision.gameObject.GetComponent<Player>().takeDamage(getAttackDamage(), 1, 30f, 1);
+        }
+    }
 }
