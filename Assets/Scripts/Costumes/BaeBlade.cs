@@ -6,7 +6,7 @@ public class BaeBlade : MonoBehaviour, Costume_Interface {
 
 	private int damage = 100;
 	private string name = "baeblade";
-	private float force = 13;
+	private float force = 30;
 	private float attackWidth = 0.5f;
 	private float time = 1f;
 	private float timer = 1f;
@@ -28,7 +28,7 @@ public class BaeBlade : MonoBehaviour, Costume_Interface {
 	}
 
 	private IEnumerator youSpinMeRightRounBBY(Player p) {
-
+		p.setCanMove(false);
 		while(timer > 0) {
 			p.attack(attackWidth);
 			timer -= Time.deltaTime;
@@ -36,6 +36,7 @@ public class BaeBlade : MonoBehaviour, Costume_Interface {
 		}
 
 		timer = time;
+		p.setCanMove(true);
 	}
 
 }

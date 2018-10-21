@@ -61,6 +61,7 @@ public class Player : Character {
         hats.Add(new HorseHead());
         costumes.Add(new BaeBlade());
         costumes.Add(new Fighter());
+
 	}
 
 	private void Update() {

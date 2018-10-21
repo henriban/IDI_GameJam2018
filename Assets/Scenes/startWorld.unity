@@ -122,11 +122,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4147149318567096, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.4
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 4147149318567096, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.9
+      value: 1.66
       objectReference: {fileID: 0}
     - target: {fileID: 4147149318567096, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.z
@@ -154,11 +154,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4186887877313842, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.00000047683716
+      value: -0.00000039736432
       objectReference: {fileID: 0}
     - target: {fileID: 4549954670764328, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.00000047683716
+      value: -0.00000039736432
       objectReference: {fileID: 0}
     - target: {fileID: 4186887877313842, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -170,11 +170,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4549954670764328, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.00000047683716
+      value: -0.00000039736432
       objectReference: {fileID: 0}
     - target: {fileID: 4186887877313842, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.00000047683716
+      value: -0.00000039736432
       objectReference: {fileID: 0}
     - target: {fileID: 61737608223206556, guid: fb726764445c346668d18bb9eed726b5,
         type: 2}
@@ -194,6 +194,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb726764445c346668d18bb9eed726b5, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &135514974 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1224267064476664, guid: 2783ddc52f697e84da947b0fa6726cea,
+    type: 2}
+  m_PrefabInternal: {fileID: 986582428}
 --- !u!1 &183699450
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,6 +462,35 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.859637, y: 0.7816577}
   m_EdgeRadius: 0
+--- !u!1 &516414793 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1183069750041840, guid: 2783ddc52f697e84da947b0fa6726cea,
+    type: 2}
+  m_PrefabInternal: {fileID: 986582428}
+--- !u!60 &516414794 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 60772018168076514, guid: 2783ddc52f697e84da947b0fa6726cea,
+    type: 2}
+  m_PrefabInternal: {fileID: 986582428}
+--- !u!114 &516414797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 516414793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d10b70688f5ba43863d2990d096393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  movementSpeed: 0
+  jumpForce: 0
+  attackDamage: 25
+  attackSpeed: 0
+  canMove: 1
+  treeCollider: {fileID: 516414794}
+  firePolygon: {fileID: 135514974}
 --- !u!1 &704000698
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,6 +566,22 @@ Transform:
   m_Father: {fileID: 1086147442}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &826781353 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1419255702337312, guid: fb726764445c346668d18bb9eed726b5,
+    type: 2}
+  m_PrefabInternal: {fileID: 61361371}
+--- !u!114 &826781354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 826781353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5e25566bef730a4eb4675c7e922976c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &922980767
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,7 +700,28 @@ Prefab:
       propertyPath: m_Name
       value: Fire Particle Effect
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 60772018168076514, guid: 2783ddc52f697e84da947b0fa6726cea,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 60772018168076514, guid: 2783ddc52f697e84da947b0fa6726cea,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 249926643019331710, guid: 2783ddc52f697e84da947b0fa6726cea,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 60434516051674536, guid: 2783ddc52f697e84da947b0fa6726cea,
+        type: 2}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 249926643019331710, guid: 2783ddc52f697e84da947b0fa6726cea, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 2783ddc52f697e84da947b0fa6726cea, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1086147441
