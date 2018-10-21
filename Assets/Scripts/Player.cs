@@ -42,16 +42,18 @@ public class Player : Character {
         rb2d = GetComponent<Rigidbody2D>();
         bc2d = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-		hats = new List<Hat_Interface>();
-		costumes = new List<Costume_Interface>();
-		gameObject.AddComponent<BaeBlade>();
-		costumes.Add(GetComponent<BaeBlade>());
-		activeHat = 0;
+		    hats = new List<Hat_Interface>();
+		    costumes = new List<Costume_Interface>();
+		    gameObject.AddComponent<BaeBlade>();
+		    costumes.Add(GetComponent<BaeBlade>());
         animator = GetComponent<Animator>();
         animationClip = GetComponent<AnimationClip>();
         hats.Add(new Bald());
         hats.Add(new Propeller());
         costumes.Add(new OldMan());
+        animator = GetComponent<Animator>();
+        animationClip = GetComponent<AnimationClip>();
+        activeHat = 0;
         activeCostume = 0;
         numberOfJumps = 0;
 
