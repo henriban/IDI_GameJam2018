@@ -58,6 +58,7 @@ public class Player : Character {
         numberOfJumps = 0;
 
         hats.Add(new Propeller());
+        hats.Add(new HorseHead());
         costumes.Add(new BaeBlade());
         costumes.Add(new Fighter());
 	}

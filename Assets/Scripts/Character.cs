@@ -77,4 +77,14 @@ public class Character : MonoBehaviour {
     {
         this.canMove = canMove;
     }
+
+    public float getMovementSpeed()
+    {
+        return movementSpeed;
+    }
+
+    public void setMovementSpeed(float newMovementSpeed)
+    {
+        this.movementSpeed = newMovementSpeed;
+    }
 }
