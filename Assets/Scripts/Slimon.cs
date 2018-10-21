@@ -46,4 +46,24 @@ public class Slimon : Character {
 	{
   
 	}
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.tag == "Player")
+        {
+            collision.gameObject.GetComponent<Player>().takeDamage(getAttackDamage());
+            Rigidbody2D playerRb2d = collision.gameObject.GetComponent<Rigidbody2D>();
+            playerRb2d.velocity = new Vector2(moveDirection * 10.0f, playerRb2d.velocity.y);
+            //collision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(10.0f * moveDirection, 0), ForceMode2D.Impulse);
+        }
+    }
+
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Player")
+        {
+            Rigidbody2D playerRb2d = collision.gameObject.GetComponent<Rigidbody2D>();
+            playerRb2d.velocity = new Vector2(moveDirection * 10.0f, playerRb2d.velocity.y);
+        }
+    }
 }

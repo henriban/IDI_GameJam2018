@@ -17,7 +17,7 @@ public class PropelHat : MonoBehaviour, Hat_Interface {
 
     public string getName()
     {
-        return "Catears";
+        return "Propelhat";
     }
 
     public void onEquip()

@@ -14,7 +14,8 @@ public class Character : MonoBehaviour {
 
 	public void takeDamage(int damageDone)
 	{
-        Debug.Log("I did damage");
+        setHitPoints(getHitPoints() - damageDone);
+        Debug.Log(getHitPoints());
 	}
 
     public void jump(Rigidbody2D body){
@@ -36,4 +37,13 @@ public class Character : MonoBehaviour {
         return attackDamage;
     }
 
+    public int getHitPoints()
+    {
+        return hp;
+    }
+
+    public void setHitPoints(int newHp)
+    {
+        this.hp = newHp;
+    }
 }
