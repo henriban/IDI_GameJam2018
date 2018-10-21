@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ChangeCostume : MonoBehaviour {
 
-    public string skinName;
-    public string folder;
+    private string skinName = "oldman_bald_walk";
+    private string folder = "BaldMan";
     public SpriteRenderer renderer;
 
     public void setSkinName(string folder, string skinName){

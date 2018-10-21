@@ -3,22 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Propeller : MonoBehaviour, Hat_Interface {
-    public string getName()
-    {
-        return "propeller";
-    }
 
-    public void onEquip()
-    {
-        // TODO: remove double jump
-    }
-
-    public void unequip()
-    {
-        // TODO: turn on double jump
-    }
-
-    // Use this for initialization
+	// Use this for initialization
 	void Start () {
 		
 	}
@@ -27,4 +13,21 @@ public class Propeller : MonoBehaviour, Hat_Interface {
 	void Update () {
 		
 	}
+
+
+    public string getName()
+    {
+        return "propeller";
+    }
+
+    public void onEquip()
+    {
+        Player.player.setDoubleJump(true);
+    }
+
+    public void unequip()
+    {
+        Player.player.setDoubleJump(false);
+    }
+
 }
