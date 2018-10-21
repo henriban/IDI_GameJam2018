@@ -62,6 +62,7 @@ public class Player : Character {
         activeHat = 0;
         activeCostume = 0;
         numberOfJumps = 0;
+
 	}
 
 	private void Update() {
@@ -103,39 +104,35 @@ public class Player : Character {
         {
             faceDirection = Input.GetAxisRaw("Horizontal");
         }
-	}
 
-	// Update is called once per frame
-	void FixedUpdate () {
+		animator.SetFloat("verticalSpeed", rb2d.velocity.y);
 
-        animator.SetFloat("verticalSpeed", rb2d.velocity.y);
-
-        //Inputs
-        if (Input.GetAxis("Horizontal") != 0 && canMoveHorizontaly(Input.GetAxis("Horizontal")))
-        {
-            base.moveHorizontal(rb2d, Input.GetAxis("Horizontal"));
-        }
-
-        if (Input.GetAxisRaw("Vertical") > 0.0f && canJump())
-        {
-            canDoubleJump = false;
-            base.jump(rb2d);
-            numberOfJumps += 1;
-        }
-
-        if (Input.GetAxisRaw("Vertical") == 0.0f)
-        {
-            canDoubleJump = true;
-        }
-
-
-		if (Input.GetAxisRaw ("Vertical") > 0.0f && !canMoveHorizontaly (Input.GetAxis ("Horizontal")) && !canJump())
+		//Inputs
+		if (Input.GetAxis("Horizontal") != 0 && canMoveHorizontaly (Input.GetAxis ("Horizontal")) )
 		{
-			base.jump(rb2d);
+			base.moveHorizontal(rb2d, Input.GetAxis("Horizontal"));
 		}
 
 
-    }
+		if (Input.GetAxisRaw("Vertical") > 0.0f && canJump())
+
+		{
+			canDoubleJump = false;
+			base.jump(rb2d);
+			numberOfJumps += 1;
+		}
+
+		if (Input.GetAxisRaw("Vertical") == 0.0f)
+		{
+			canDoubleJump = true;
+		}
+
+
+		if (Input.GetAxisRaw ("Vertical") > 0.0f && !canMoveHorizontaly (Input.GetAxis ("Horizontal")) && wallJump) {
+			rb2d.AddForce (new Vector2(10 * -getDirection(), 10), ForceMode2D.Impulse);
+		}
+	}
+		
 
     private bool canJump()
     {
@@ -175,8 +172,9 @@ public class Player : Character {
         foreach (Collider2D collider in firstEnemyCollider){
             collider.GetComponent<Character>().takeDamage(getAttackDamage(), faceDirection);
         }
-
     }
+		
+
 
     private bool canMoveHorizontaly(float direction)
     {
@@ -189,9 +187,10 @@ public class Player : Character {
         Vector2 position = rb2d.transform.position;
         Vector2 pointToCheck = new Vector2(position.x + bc2d.size.x * transform.localScale.x * direction, position.y);
 
-        firstOverlappingGroundCollider = Physics2D.OverlapBox(pointToCheck, new Vector2(0.1f, bc2d.size.y * transform.localScale.y - 0.1f), 0f, groundMask);
+        firstOverlappingGroundCollider = Physics2D.OverlapBox(pointToCheck, new Vector2(0.2f, bc2d.size.y * transform.localScale.y - 0.1f), 0f, groundMask);
 
         bool toMove = firstOverlappingGroundCollider == null;
+
         return toMove;
     }
 
