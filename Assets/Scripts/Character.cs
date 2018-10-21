@@ -12,7 +12,7 @@ public class Character : MonoBehaviour {
   [SerializeField] private float attackSpeed;
   [SerializeField] private bool canMove = true;
 
-	public void takeDamage(int damageDone, float direction)
+	public void takeDamage(int damageDone, float direction, float force = 4.0f)
 	{
         Debug.Log("Getting hurt");
 
@@ -21,7 +21,7 @@ public class Character : MonoBehaviour {
         StartCoroutine("damagePush");
 
         Rigidbody2D charRb2d = gameObject.GetComponent<Rigidbody2D>();
-        charRb2d.AddForce(new Vector2(8.0f * direction, 0), ForceMode2D.Impulse);
+        charRb2d.AddForce(new Vector2(force * direction, 0), ForceMode2D.Impulse);
 
         setHitPoints(getHitPoints() - damageDone);
         if(getHitPoints() <= 0)
