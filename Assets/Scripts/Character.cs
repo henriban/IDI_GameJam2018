@@ -26,7 +26,12 @@ public class Character : MonoBehaviour {
         setHitPoints(getHitPoints() - damageDone);
         if(getHitPoints() <= 0)
         {
-            //Destroy(gameObject);
+            if (gameObject.tag == "Player")
+            {
+                gameObject.GetComponent<Player>().deathReset();
+            } else {
+                Destroy(gameObject);
+            }
         }
 	}
 

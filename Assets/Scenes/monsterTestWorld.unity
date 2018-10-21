@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 90995243}
   - component: {fileID: 90995242}
   - component: {fileID: 90995244}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &282108956
 GameObject:
@@ -379,6 +379,34 @@ Prefab:
       propertyPath: enemyMask.m_Bits
       value: 512
       objectReference: {fileID: 0}
+    - target: {fileID: 4549954670764328, guid: fb726764445c346668d18bb9eed726b5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.00000031789145
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186887877313842, guid: fb726764445c346668d18bb9eed726b5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.00000031789145
+      objectReference: {fileID: 0}
+    - target: {fileID: 114799522366294136, guid: fb726764445c346668d18bb9eed726b5,
+        type: 2}
+      propertyPath: groundMask.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 114799522366294136, guid: fb726764445c346668d18bb9eed726b5,
+        type: 2}
+      propertyPath: enemyMask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 114799522366294136, guid: fb726764445c346668d18bb9eed726b5,
+        type: 2}
+      propertyPath: canMove
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114799522366294136, guid: fb726764445c346668d18bb9eed726b5,
+        type: 2}
+      propertyPath: hp
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb726764445c346668d18bb9eed726b5, type: 2}
   m_IsPrefabAsset: 0
@@ -394,7 +422,7 @@ GameObject:
   - component: {fileID: 1671879943}
   - component: {fileID: 1671879942}
   - component: {fileID: 1671879946}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,11 +534,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a6aef543b1ad0349a8d3114f1a4797c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 0
+  hp: 100
   movementSpeed: 1.5
   jumpForce: 0
-  attackDamage: 0
+  attackDamage: 10
   attackSpeed: 0
+  canMove: 1
   groundMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 512
