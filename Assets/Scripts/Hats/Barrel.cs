@@ -12,10 +12,12 @@ public class Barrel : MonoBehaviour, Hat_Interface {
 
     public void onEquip() {
         Player.player.setNoJump(true);
+        Player.player.setMovementSpeed(Player.player.getMovementSpeed() * movementDebuff);
     }
 
     public void unequip() {
         Player.player.setNoJump(false);
+        Player.player.setMovementSpeed(Player.player.getMovementSpeed() / movementDebuff);
     }
 
     // Use this for initialization

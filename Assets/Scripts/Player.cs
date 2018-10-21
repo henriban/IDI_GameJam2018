@@ -59,18 +59,17 @@ public class Player : Character {
         activeHat = 0;
         activeCostume = 0;
         numberOfJumps = 0;
-
-<<<<<<< HEAD
+        
 		hats.Add(new KittyEars());
         //costumes.Add(new BaeBlade());
         //costumes.Add(new Fighter());
-=======
+
         hats.Add(new Propeller());
         hats.Add(new HorseHead());
         costumes.Add(new BaeBlade());
         costumes.Add(new Fighter());
 
->>>>>>> 800ab1ab8ace26a4445f7edfc69bc5cd7ac937eb
+
 	}
 
 	private void Update() {
