@@ -196,7 +196,12 @@ public class Player : Character {
 
     private void costumeChange() {
         ChangeCostume changeCostume = GetComponent<ChangeCostume>();
-        changeCostume.setSkinName(getFolder(), getCostumeString() + "_walk");
+        if (changeCostume)
+        {
+            changeCostume.setSkinName(getFolder(), getCostumeString() + "_walk");
+        } else {
+            throw new System.Exception("No costumes");
+        }
     }
 
     public void addHat(Hat_Interface hat) {
