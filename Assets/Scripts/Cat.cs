@@ -4,5 +4,9 @@ using UnityEngine;
 
 public class Cat : Character {
 
+    public GameObject kittyEars;
 
+    void OnDestroy() {
+        Instantiate(kittyEars, transform.position, transform.rotation);
+    }
 }
