@@ -18,8 +18,9 @@ public class Player : Character {
 
 	private List<Hat_Interface> hats;
 	private List<Costume_Interface> costumes;
+    private ChangeCostume changeCostume;
 
-	private int activeHat;
+    private int activeHat;
     private int activeCostume;
 
     private Collider2D firstOverlappingGroundCollider;
@@ -48,6 +49,7 @@ public class Player : Character {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         animationClip = GetComponent<AnimationClip>();
+        changeCostume = GetComponent<ChangeCostume>();
 
         hats = new List<Hat_Interface>();
 		costumes = new List<Costume_Interface>();
@@ -225,13 +227,17 @@ public class Player : Character {
     }
 
     private void costumeChange() {
-        ChangeCostume changeCostume = GetComponent<ChangeCostume>();
         if (changeCostume)
         {
-            changeCostume.setSkinName(getFolder(), getCostumeString());
+            costumeTransform(getFolder(), getCostumeString());
         } else {
             throw new System.Exception("No costumes");
         }
+    }
+
+    public void costumeTransform(string folder, string costume)
+    {
+        changeCostume.setSkinName(folder, costume);
     }
 
     public void addHat(Hat_Interface hat) {
