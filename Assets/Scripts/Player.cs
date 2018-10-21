@@ -47,8 +47,10 @@ public class Player : Character {
 
         hats = new List<Hat_Interface>();
 		costumes = new List<Costume_Interface>();
+
         hats.Add(new Bald());
         costumes.Add(new OldMan());
+
         activeHat = 0;
         activeCostume = 0;
         numberOfJumps = 0;
