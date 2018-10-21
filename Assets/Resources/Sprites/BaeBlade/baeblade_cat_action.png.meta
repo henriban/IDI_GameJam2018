@@ -3,6 +3,11 @@ guid: ae5269b8a3ae147b9a3b9565a2473e45
 TextureImporter:
   fileIDToRecycleName:
     21300000: baeblade_cat_action_0
+    21300002: baeblade_cat_action_1
+    21300004: baeblade_cat_action_2
+    21300006: baeblade_cat_action_3
+    21300008: baeblade_cat_action_4
+    21300010: baeblade_cat_action_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -88,7 +93,7 @@ TextureImporter:
       name: baeblade_cat_action_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 8
         y: 3
         width: 16
         height: 24
@@ -99,7 +104,107 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca109c466f245400f81c26173f91a17b
+      spriteID: 10db0baf24fad454ca9355841c3f9fa9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_cat_action_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 3
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1ade9c6c215455e8ec8a641200e804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_cat_action_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 3
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a0be1651446410e9021df8c6b6f41d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_cat_action_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 3
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b867cdbbb1914840892aaf2893fd6ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_cat_action_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 3
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68f4fb0a5b7e43fc97ff33badf27500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_cat_action_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 3
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7771428719303432f8c54f56eba56f61
       vertices: []
       indices: 
       edges: []

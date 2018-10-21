@@ -3,6 +3,11 @@ guid: 7042e3251a2ca4a5fa9bc008923de4ff
 TextureImporter:
   fileIDToRecycleName:
     21300000: baeblade_bald_action_0
+    21300002: baeblade_bald_action_1
+    21300004: baeblade_bald_action_2
+    21300006: baeblade_bald_action_3
+    21300008: baeblade_bald_action_4
+    21300010: baeblade_bald_action_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -88,7 +93,7 @@ TextureImporter:
       name: baeblade_bald_action_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 8
         y: 3
         width: 16
         height: 22
@@ -99,7 +104,107 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78d49c5ce808349f5a522fb12f1370e6
+      spriteID: aec3b7eec31ec4c76bfeb923ae0c4c4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_bald_action_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 3
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f91cfe46b6af47cebf844bdb1f11ae9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_bald_action_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 3
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcae3eff7c1564843a0c7dba4a67dd03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_bald_action_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 3
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a58e582fb1174a6d87bc9a9796bfda0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_bald_action_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 3
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987a32afd4bfc452c9fe9851579e2c34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_bald_action_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 3
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c919908e2c44e339526fdbb873afe7
       vertices: []
       indices: 
       edges: []

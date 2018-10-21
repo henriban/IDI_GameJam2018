@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 626a765235f43f7449443264e45f3935
+guid: d4c0fffdaf9a3412aa1fc4a67f5f35c5
 TextureImporter:
   fileIDToRecycleName:
     21300000: fighter_bald_action_0
     21300002: fighter_bald_action_1
     21300004: fighter_bald_action_2
+    21300006: fighter_bald_action_3
+    21300008: fighter_bald_action_4
+    21300010: fighter_bald_action_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -101,7 +104,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04b061968a76c4259b35fae9724a97df
+      spriteID: 68a728b5b77774f9b924789a98d09110
       vertices: []
       indices: 
       edges: []
@@ -121,7 +124,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef98592b8a2984be5808deca4145f087
+      spriteID: 07d2c1805c1c24b0ea9f6fbc2776a140
       vertices: []
       indices: 
       edges: []
@@ -141,7 +144,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54377072b760e40e7ab4ea8db1e0c29e
+      spriteID: f1bfa953c5e2a44e2944f49d0217b6cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fighter_bald_action_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 3
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ea6a8e1bb624b5fa5141ecb97feb1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fighter_bald_action_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 3
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594605425ac9048e4a2c586ea118345c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fighter_bald_action_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 3
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d5ee39223c844899b84c5bb6e225c0
       vertices: []
       indices: 
       edges: []
@@ -149,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 015b9309b77674813943e22506be7ad4
+    spriteID: f4cd99ab7aeae4bf183f96a30d6d1445
     vertices: []
     indices: 
     edges: []

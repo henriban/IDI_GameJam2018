@@ -154,11 +154,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4186887877313842, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.00000039736432
+      value: -0.00000047683716
       objectReference: {fileID: 0}
     - target: {fileID: 4549954670764328, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.00000039736432
+      value: -0.00000047683716
       objectReference: {fileID: 0}
     - target: {fileID: 4186887877313842, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -170,11 +170,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4549954670764328, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.00000039736432
+      value: -0.00000047683716
       objectReference: {fileID: 0}
     - target: {fileID: 4186887877313842, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.00000039736432
+      value: -0.00000047683716
       objectReference: {fileID: 0}
     - target: {fileID: 61737608223206556, guid: fb726764445c346668d18bb9eed726b5,
         type: 2}
@@ -376,8 +376,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd8573b87f5df88468ef92bf523e3b31, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &238553364
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -481,8 +481,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65d10b70688f5ba43863d2990d096393, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   hp: 0
   movementSpeed: 0
   jumpForce: 0
@@ -580,8 +580,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5e25566bef730a4eb4675c7e922976c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &922980767
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,8 +909,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -1069,8 +1069,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -1232,8 +1232,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -1470,8 +1470,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -1619,8 +1619,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -2058,8 +2058,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: acba1a24e962840a988def71f4b452eb, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1945191780
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,8 +2101,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:

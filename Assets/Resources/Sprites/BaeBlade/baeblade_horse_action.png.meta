@@ -3,6 +3,11 @@ guid: 6e3fa84b2d61a468eb30f4e3afe54625
 TextureImporter:
   fileIDToRecycleName:
     21300000: baeblade_horse_action_0
+    21300002: baeblade_horse_action_1
+    21300004: baeblade_horse_action_2
+    21300006: baeblade_horse_action_3
+    21300008: baeblade_horse_action_4
+    21300010: baeblade_horse_action_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -88,7 +93,27 @@ TextureImporter:
       name: baeblade_horse_action_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 8
+        y: 3
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aafd23ab9062c48aeb35dda9724ef193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_horse_action_1
+      rect:
+        serializedVersion: 2
+        x: 38
         y: 3
         width: 18
         height: 23
@@ -99,7 +124,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cefd09cc5c0ce4931ba66fc21e85543d
+      spriteID: 311668506553c46a2bd910b1c96c4fc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_horse_action_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 3
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3e186fff0d1400d9e37e7c4b1a7115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_horse_action_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 3
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12f41e40d10a49d6a0170d706415a4b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_horse_action_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 3
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05dcbf8ac4a71456792ef084289f2f1d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_horse_action_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 3
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9a0416c474a412e987a331b939a835
       vertices: []
       indices: 
       edges: []

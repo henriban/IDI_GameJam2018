@@ -1,13 +1,15 @@
 fileFormatVersion: 2
-guid: 0fbcc882599f54a309a78c355a3d4e92
+guid: ae43884a3be504911bab3dc6b8d5d64e
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fighter_propeller_action_0
-    21300002: fighter_propeller_action_1
-    21300004: fighter_propeller_action_2
-    21300006: fighter_propeller_action_3
-    21300008: fighter_propeller_action_4
-    21300010: fighter_propeller_action_5
+    21300000: oldman_cat_action_0
+    21300002: oldman_cat_action_1
+    21300004: oldman_cat_action_2
+    21300006: oldman_cat_action_3
+    21300008: oldman_cat_action_4
+    21300010: oldman_cat_action_5
+    21300012: oldman_cat_action_6
+    21300014: oldman_cat_action_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,13 +92,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fighter_propeller_action_0
+      name: oldman_cat_action_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 11
         y: 3
-        width: 16
-        height: 25
+        width: 12
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,19 +106,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1007e80a8ef934ac0ae668ae93a882fa
+      spriteID: 4e3b5ddef8e734d748092f6fec4d2849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_1
+      name: oldman_cat_action_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 43
         y: 3
-        width: 23
-        height: 25
+        width: 11
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,19 +126,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8d8f7215559c499ba4c59d8c8f854b3
+      spriteID: a932afd1d226d419182938f8a3dc9057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_2
+      name: oldman_cat_action_2
       rect:
         serializedVersion: 2
-        x: 71
+        x: 74
         y: 3
-        width: 20
-        height: 25
+        width: 19
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90f3350e2a69d4488a17d2e63db5ceed
+      spriteID: 10edcbd6f7e5d4fe4bad86109db28937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_3
+      name: oldman_cat_action_3
       rect:
         serializedVersion: 2
-        x: 103
-        y: 3
-        width: 20
-        height: 25
+        x: 84
+        y: 26
+        width: 5
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,19 +166,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2608dd32c7ec4175b38019c02d9ee31
+      spriteID: 05229869425194098b3c21a4e709a432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_4
+      name: oldman_cat_action_4
       rect:
         serializedVersion: 2
-        x: 135
+        x: 107
         y: 3
-        width: 20
-        height: 25
+        width: 17
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,19 +186,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85a4e9636b3014921ba2debb9e01c679
+      spriteID: b6bb221c70e864c1da3c94abbf29b67d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_5
+      name: oldman_cat_action_5
       rect:
         serializedVersion: 2
-        x: 167
+        x: 139
         y: 3
-        width: 20
-        height: 25
+        width: 12
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,7 +206,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09d1f2f4b89444030808369dde3590c8
+      spriteID: 32d1d7268394e492ba3d3e50ded4bc1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldman_cat_action_6
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 3
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2368e7a53ae06470c86839ccd8daccb8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldman_cat_action_7
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 7
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5cb4ebc44404c7ba8d222c879f593f
       vertices: []
       indices: 
       edges: []
@@ -212,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d23b64a22d7c743108f89596785e29a5
+    spriteID: ed5e9c35422ee466b8652abeef2a7419
     vertices: []
     indices: 
     edges: []
