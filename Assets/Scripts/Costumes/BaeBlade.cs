@@ -7,6 +7,7 @@ public class BaeBlade : MonoBehaviour, Costume_Interface {
 	private int damage = 100;
 	private string name = "Baeblade";
 	private float force = 30;
+
 	private float attackWidth = 0.5f;
 	private float time = 1f;
 	private float timer = 1f;

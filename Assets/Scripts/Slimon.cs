@@ -36,7 +36,6 @@ public class Slimon : Character {
         if (firstOverlappingCollider == null)
         {
             moveDirection = moveDirection * -1;
-
         }
 
         moveHorizontal(rb2d, moveDirection);
@@ -46,4 +45,14 @@ public class Slimon : Character {
 	{
   
 	}
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.tag == "Player")
+        {
+            collision.gameObject.GetComponent<Player>().takeDamage(getAttackDamage(), moveDirection);
+        }
+    }
+
+    
 }
