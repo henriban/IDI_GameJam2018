@@ -35,7 +35,12 @@ public class Character : MonoBehaviour {
         }
 	}
 
-    IEnumerator damagePush()
+	public void wait(float waitForSeconds){
+		setCanMove(false);
+		StartCoroutine (damagePush (waitForSeconds));
+	}
+
+	IEnumerator damagePush(float wait = 0.5f)
     {
         yield return new WaitForSeconds(0.5f);
         setCanMove(true);
