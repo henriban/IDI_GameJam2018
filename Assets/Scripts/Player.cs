@@ -56,6 +56,12 @@ public class Player : Character {
         activeHat = 0;
         activeCostume = 0;
         numberOfJumps = 0;
+
+        hats.Add(new Propeller());
+        hats.Add(new HorseHead());
+        costumes.Add(new BaeBlade());
+        costumes.Add(new Fighter());
+
 	}
 
 	private void Update() {
