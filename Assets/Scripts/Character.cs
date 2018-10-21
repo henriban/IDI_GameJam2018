@@ -10,12 +10,32 @@ public class Character : MonoBehaviour {
 
   [SerializeField] private int attackDamage;
   [SerializeField] private float attackSpeed;
+  [SerializeField] private bool canMove = false;
 
-
-	public void takeDamage(int damageDone)
+	public void takeDamage(int damageDone, float direction)
 	{
-        Debug.Log("I did damage");
+        Debug.Log("Getting hurt");
+
+
+        setCanMove(false);
+        StartCoroutine("damagePush");
+
+        Rigidbody2D charRb2d = gameObject.GetComponent<Rigidbody2D>();
+        charRb2d.AddForce(new Vector2(4.0f * direction, 0), ForceMode2D.Impulse);
+
+        setHitPoints(getHitPoints() - damageDone);
+        if(getHitPoints() <= 0)
+        {
+            //Destroy(gameObject);
+        }
 	}
+
+    IEnumerator damagePush()
+    {
+        yield return new WaitForSeconds(0.5f);
+        setCanMove(true);
+
+    }
 
     public void jump(Rigidbody2D body){
         body.velocity = new Vector2(body.velocity.x, 0.0f);
@@ -23,8 +43,10 @@ public class Character : MonoBehaviour {
 	}
 
     public void moveHorizontal(Rigidbody2D body, float direction) {
-        body.velocity = new Vector2 (direction * movementSpeed, body.velocity.y);
-        GetComponent<SpriteRenderer>().flipX = direction < 0;
+        if (canMove) {
+            body.velocity = new Vector2(direction * movementSpeed, body.velocity.y);
+            GetComponent<SpriteRenderer>().flipX = direction < 0;
+        } 
     }
 
 	public void setAttackDamage(int attackDamage) {
@@ -36,4 +58,18 @@ public class Character : MonoBehaviour {
         return attackDamage;
     }
 
+    public int getHitPoints()
+    {
+        return hp;
+    }
+
+    public void setHitPoints(int newHp)
+    {
+        this.hp = newHp;
+    }
+
+    public void setCanMove(bool canMove)
+    {
+        this.canMove = canMove;
+    }
 }
