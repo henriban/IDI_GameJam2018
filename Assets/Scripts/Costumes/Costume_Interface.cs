@@ -9,4 +9,5 @@ public interface Costume_Interface {
 	string getName();
 
 	int getDamage();
+
 }

@@ -5,8 +5,10 @@ using UnityEngine;
 public class Player : Character {
 
     [SerializeField] private LayerMask groundMask;
+    [SerializeField] private LayerMask enemyMask;
 
-	public static Player player;
+
+    public static Player player;
 
     private Rigidbody2D rb2d;
     private BoxCollider2D bc2d;
@@ -22,9 +24,13 @@ public class Player : Character {
 
     private Collider2D firstOverlappingGroundCollider;
 
+    private float faceDirection = 1.0f;
+    private bool doubleJump = false;
+    private bool canDoubleJump = false;
+    private int numberOfJumps;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		if(player == null) {
 			player = this;
 			DontDestroyOnLoad(this);
@@ -40,12 +46,14 @@ public class Player : Character {
         animationClip = GetComponent<AnimationClip>();
 
         hats = new List<Hat_Interface>();
-		costumes = new List<Costume_Interface>();
+		    costumes = new List<Costume_Interface>();
         hats.Add(new Bald());
         hats.Add(new Propeller());
         costumes.Add(new OldMan());
         activeHat = 0;
         activeCostume = 0;
+        numberOfJumps = 0;
+
 	}
 
 	private void Update() {
@@ -81,8 +89,13 @@ public class Player : Character {
 		if(Input.GetKeyDown(KeyCode.Space)) {
 			costumes[activeCostume].onSpecial(this);
 		}
+
+        if(Input.GetAxisRaw("Horizontal") != 0)
+        {
+            faceDirection = Input.GetAxisRaw("Horizontal");
+        }
 	}
-    
+
 	// Update is called once per frame
 	void FixedUpdate () {
 
@@ -92,22 +105,54 @@ public class Player : Character {
             base.moveHorizontal(rb2d, Input.GetAxis("Horizontal"));
         }
 
-        if (Input.GetAxis("Vertical") > 0 && canJump())
+        if (Input.GetAxisRaw("Vertical") > 0.0f && canJump())
         {
-            print(spriteRenderer.bounds);
+            canDoubleJump = false;
             base.jump(rb2d);
+            numberOfJumps += 1;
         }
-	}
+
+        if (Input.GetAxisRaw("Vertical") == 0.0f)
+        {
+            canDoubleJump = true;
+        }
+
+    }
 
     private bool canJump()
     {
+        if (doubleJump && numberOfJumps <= 1 && canDoubleJump)
+        {
+            return true;
+        }
+
         // Check if the point underneath the player is ground
         Vector2 position = rb2d.transform.position;
         Vector2 pointToCheck = new Vector2(position.x, position.y - bc2d.size.y * transform.localScale.y / 2f - 0.1f);
         firstOverlappingGroundCollider = Physics2D.OverlapCircle(pointToCheck, 0.1f, groundMask);
 
         bool toJump = firstOverlappingGroundCollider != null;
+        if (toJump){
+           numberOfJumps = 0;
+        }
+
         return toJump;
+    }
+
+    public void attack(float attackWidth)
+    {
+
+        float pointXToCheck = rb2d.transform.position.x + (faceDirection * (spriteRenderer.bounds.extents.x + (attackWidth/2)));
+        float pointYToCheck = rb2d.transform.position.y + 0.1f;
+        Vector2 pointToCheck = new Vector2(pointXToCheck, pointYToCheck);
+
+        Vector2 attackSize = new Vector2(attackWidth, spriteRenderer.bounds.size.y);
+
+        Collider2D[] firstEnemyCollider = Physics2D.OverlapBoxAll(pointToCheck, attackSize, 0.0f, enemyMask);
+        foreach (Collider2D collider in firstEnemyCollider){
+            collider.GetComponent<Character>().takeDamage(getAttackDamage());
+        }
+
     }
 
     private bool canMoveHorizontaly(float direction)
@@ -127,6 +172,10 @@ public class Player : Character {
         return toMove;
     }
 
+    public float getDirection()
+    {
+        return faceDirection;
+     }
     private string getCostumeString() {
         string costume = costumes[activeCostume].getName().ToLower();
         string hat = hats[activeHat].getName().ToLower();
@@ -148,5 +197,18 @@ public class Player : Character {
     private void costumeChange() {
         ChangeCostume changeCostume = GetComponent<ChangeCostume>();
         changeCostume.setSkinName(getFolder(), getCostumeString() + "_walk");
+    }
+
+    public void addHat(Hat_Interface hat) {
+        hats.Add(hat);
+    }
+
+    public void addCostume(Costume_Interface costume) {
+        costumes.Add(costume);
+    }
+
+    public void setDoubleJump(bool active)
+    {
+        doubleJump = active;
     }
 }

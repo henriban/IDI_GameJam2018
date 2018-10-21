@@ -121,7 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 493579776}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,9 @@ GameObject:
   - component: {fileID: 497898395}
   - component: {fileID: 497898394}
   - component: {fileID: 497898393}
-  m_Layer: 0
+  - component: {fileID: 497898396}
+  - component: {fileID: 497898397}
+  m_Layer: 8
   m_Name: SpriteShape (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,9 +200,9 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 7c0a1c041290b5f458332fe98c2afbe1, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
-  m_UpdateCollider: 0
-  m_ColliderDetail: 4
-  m_ColliderOffset: 0
+  m_UpdateCollider: 1
+  m_ColliderDetail: 16
+  m_ColliderOffset: 0.5
   m_ColliderCornerType: 0
 --- !u!1971053207 &497898394
 SpriteShapeRenderer:
@@ -211,7 +213,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -269,6 +271,44 @@ Transform:
   m_Father: {fileID: 493579776}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &497898396
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 497898392}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 3.44999, y: -1.94}
+  - {x: -1.55, y: -1.94}
+  - {x: -1.55, y: -2.94}
+  - {x: 3.44999, y: -2.94}
+  - {x: 3.44999, y: -1.94}
+--- !u!251 &497898397
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 497898392}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &565348429
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,7 +319,9 @@ GameObject:
   - component: {fileID: 565348432}
   - component: {fileID: 565348431}
   - component: {fileID: 565348430}
-  m_Layer: 0
+  - component: {fileID: 565348433}
+  - component: {fileID: 565348434}
+  m_Layer: 8
   m_Name: SpriteShape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,9 +363,9 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 7c0a1c041290b5f458332fe98c2afbe1, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
-  m_UpdateCollider: 0
-  m_ColliderDetail: 4
-  m_ColliderOffset: 0
+  m_UpdateCollider: 1
+  m_ColliderDetail: 16
+  m_ColliderOffset: 0.5
   m_ColliderCornerType: 0
 --- !u!1971053207 &565348431
 SpriteShapeRenderer:
@@ -334,7 +376,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -392,6 +434,41 @@ Transform:
   m_Father: {fileID: 493579776}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &565348433
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 565348429}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -10.3625, y: -2.44}
+  - {x: -5.7375, y: -2.44}
+--- !u!251 &565348434
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 565348429}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &760376316
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,7 +479,9 @@ GameObject:
   - component: {fileID: 760376319}
   - component: {fileID: 760376318}
   - component: {fileID: 760376317}
-  m_Layer: 0
+  - component: {fileID: 760376320}
+  - component: {fileID: 760376321}
+  m_Layer: 8
   m_Name: SpriteShape (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -444,9 +523,9 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 7c0a1c041290b5f458332fe98c2afbe1, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
-  m_UpdateCollider: 0
-  m_ColliderDetail: 4
-  m_ColliderOffset: 0
+  m_UpdateCollider: 1
+  m_ColliderDetail: 16
+  m_ColliderOffset: 0.5
   m_ColliderCornerType: 0
 --- !u!1971053207 &760376318
 SpriteShapeRenderer:
@@ -457,7 +536,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -515,6 +594,44 @@ Transform:
   m_Father: {fileID: 493579776}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &760376320
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 760376316}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 25.45, y: 0.06}
+  - {x: 23.45, y: 0.06}
+  - {x: 23.45, y: -0.94}
+  - {x: 25.45, y: -0.94}
+  - {x: 25.45, y: 0.06}
+--- !u!251 &760376321
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 760376316}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1235721862
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,7 +642,8 @@ GameObject:
   - component: {fileID: 1235721865}
   - component: {fileID: 1235721864}
   - component: {fileID: 1235721863}
-  m_Layer: 0
+  - component: {fileID: 1235721866}
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -693,9 +811,9 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 7c0a1c041290b5f458332fe98c2afbe1, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
-  m_UpdateCollider: 0
-  m_ColliderDetail: 4
-  m_ColliderOffset: 0
+  m_UpdateCollider: 1
+  m_ColliderDetail: 16
+  m_ColliderOffset: 0.5
   m_ColliderCornerType: 0
 --- !u!1971053207 &1235721864
 SpriteShapeRenderer:
@@ -706,7 +824,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -764,6 +882,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1235721866
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235721862}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 122.5, y: -4.20711}
+  - {x: 122.5, y: 22.20711}
+  - {x: 122.20711, y: 22.5}
+  - {x: 106.79289, y: 22.5}
+  - {x: 106.5, y: 22.20711}
+  - {x: 106.5, y: 8.5}
+  - {x: 89.79289, y: 8.5}
+  - {x: 89.5, y: 8.20711}
+  - {x: 89.5, y: 0.5}
+  - {x: 56.5, y: 0.5}
+  - {x: 56.5, y: 8.20711}
+  - {x: 56.20711, y: 8.5}
+  - {x: 43.79289, y: 8.5}
+  - {x: 43.5, y: 8.20711}
+  - {x: 43.5, y: 0.5}
+  - {x: 36.5, y: 0.5}
+  - {x: 36.5, y: 2.20711}
+  - {x: 36.20711, y: 2.5}
+  - {x: 19.79289, y: 2.5}
+  - {x: 19.5, y: 2.20711}
+  - {x: 19.5, y: 0.5}
+  - {x: 2.79289, y: 0.5}
+  - {x: 2.5, y: 0.20711}
+  - {x: 2.5, y: -4.20711}
+  - {x: 2.79289, y: -4.5}
+  - {x: 122.20711, y: -4.5}
+  - {x: 122.5, y: -4.20711}
 --- !u!1 &1698378507
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,7 +934,9 @@ GameObject:
   - component: {fileID: 1698378510}
   - component: {fileID: 1698378509}
   - component: {fileID: 1698378508}
-  m_Layer: 0
+  - component: {fileID: 1698378511}
+  - component: {fileID: 1698378512}
+  m_Layer: 8
   m_Name: SpriteShape (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -816,9 +978,9 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 7c0a1c041290b5f458332fe98c2afbe1, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
-  m_UpdateCollider: 0
-  m_ColliderDetail: 4
-  m_ColliderOffset: 0
+  m_UpdateCollider: 1
+  m_ColliderDetail: 16
+  m_ColliderOffset: 0.5
   m_ColliderCornerType: 0
 --- !u!1971053207 &1698378509
 SpriteShapeRenderer:
@@ -829,7 +991,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -887,6 +1049,41 @@ Transform:
   m_Father: {fileID: 493579776}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1698378511
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1698378507}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 62.637497, y: 3.56}
+  - {x: 68.2625, y: 3.56}
+--- !u!251 &1698378512
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1698378507}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1736572818
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,7 +1094,9 @@ GameObject:
   - component: {fileID: 1736572821}
   - component: {fileID: 1736572820}
   - component: {fileID: 1736572819}
-  m_Layer: 0
+  - component: {fileID: 1736572822}
+  - component: {fileID: 1736572823}
+  m_Layer: 8
   m_Name: SpriteShape (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -939,9 +1138,9 @@ MonoBehaviour:
   m_SpriteShape: {fileID: 11400000, guid: 7c0a1c041290b5f458332fe98c2afbe1, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
-  m_UpdateCollider: 0
-  m_ColliderDetail: 4
-  m_ColliderOffset: 0
+  m_UpdateCollider: 1
+  m_ColliderDetail: 16
+  m_ColliderOffset: 0.5
   m_ColliderCornerType: 0
 --- !u!1971053207 &1736572820
 SpriteShapeRenderer:
@@ -952,7 +1151,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1010,3 +1209,41 @@ Transform:
   m_Father: {fileID: 493579776}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1736572822
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1736572818}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 50.45, y: 1.05999}
+  - {x: 44.45, y: 1.05999}
+  - {x: 44.45, y: 0.05999}
+  - {x: 50.45, y: 0.05999}
+  - {x: 50.45, y: 1.05999}
+--- !u!251 &1736572823
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1736572818}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
