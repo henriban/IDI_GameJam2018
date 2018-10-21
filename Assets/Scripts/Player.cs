@@ -42,8 +42,9 @@ public class Player : Character {
         spriteRenderer = GetComponent<SpriteRenderer>();
 		hats = new List<Hat_Interface>();
 		costumes = new List<Costume_Interface>();
-        costumes.Add(new FighterCostume());
-        activeHat = 0;
+		gameObject.AddComponent<BaeBlade>();
+		costumes.Add(GetComponent<BaeBlade>());
+		activeHat = 0;
         activeCostume = 0;
         numberOfJumps = 0;
         
@@ -85,30 +86,23 @@ public class Player : Character {
         {
             faceDirection = Input.GetAxisRaw("Horizontal");
         }
+
+		//Inputs
+		if(Input.GetAxis("Horizontal") != 0 && canMoveHorizontaly(Input.GetAxis("Horizontal"))) {
+			base.moveHorizontal(rb2d, Input.GetAxis("Horizontal"));
+		}
+
+		if(Input.GetAxisRaw("Vertical") > 0.0f && canJump()) {
+			canDoubleJump = false;
+			base.jump(rb2d);
+			numberOfJumps += 1;
+		}
+
+		if(Input.GetAxisRaw("Vertical") == 0.0f) {
+			canDoubleJump = true;
+		}
 	}
 
-	// Update is called once per frame
-	void FixedUpdate () {
-
-        //Inputs
-        if (Input.GetAxis("Horizontal") != 0 && canMoveHorizontaly(Input.GetAxis("Horizontal")))
-        {
-            base.moveHorizontal(rb2d, Input.GetAxis("Horizontal"));
-        }
-
-        if (Input.GetAxisRaw("Vertical") > 0.0f && canJump())
-        {
-            canDoubleJump = false;
-            base.jump(rb2d);
-            numberOfJumps += 1;
-        }
-
-        if (Input.GetAxisRaw("Vertical") == 0.0f)
-        {
-            canDoubleJump = true;
-        }
-
-    }
 
     private bool canJump()
     {
