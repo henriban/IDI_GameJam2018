@@ -56,6 +56,9 @@ public class Player : Character {
         hats = new List<Hat_Interface>();
 		costumes = new List<Costume_Interface>();
 
+        addHat(new Bald());
+        addCostume(new OldMan());
+
         activeHat = 0;
         activeCostume = 0;
         numberOfJumps = 0;
