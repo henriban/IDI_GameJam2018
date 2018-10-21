@@ -25,7 +25,9 @@ public class Player : Character {
     private Collider2D firstOverlappingGroundCollider;
 
     private float faceDirection = 1.0f;
+    private bool noJump = false;
     private bool doubleJump = false;
+	private bool wallJump = false;
     private bool canDoubleJump = false;
     private int numberOfJumps;
     private Vector2 startPos;
@@ -51,15 +53,23 @@ public class Player : Character {
 		costumes = new List<Costume_Interface>();
 
         hats.Add(new Bald());
+        hats.Add(new Barrel());
         costumes.Add(new OldMan());
 
         activeHat = 0;
         activeCostume = 0;
         numberOfJumps = 0;
+        
+		hats.Add(new KittyEars());
+        //costumes.Add(new BaeBlade());
+        //costumes.Add(new Fighter());
 
         hats.Add(new Propeller());
+        hats.Add(new HorseHead());
         costumes.Add(new BaeBlade());
         costumes.Add(new Fighter());
+
+
 	}
 
 	private void Update() {
@@ -125,10 +135,27 @@ public class Player : Character {
             canDoubleJump = true;
         }
 
+
+		if (Input.GetAxisRaw ("Vertical") > 0.0f && !canMoveHorizontaly (Input.GetAxis ("Horizontal")) && !canJump()) 
+		{
+			base.jump(rb2d);
+			print ("hey");
+			print (!canJump ());
+			print (!canMoveHorizontaly (Input.GetAxis ("Horizontal")));
+			print (Input.GetAxisRaw ("Vertical") > 0.0f);
+
+		}
+			
+
     }
 
     private bool canJump()
     {
+        if (noJump)
+        {
+            return false;
+        }
+
         if (doubleJump && numberOfJumps <= 1 && canDoubleJump)
         {
             return true;
@@ -225,10 +252,19 @@ public class Player : Character {
         doubleJump = active;
     }
 
+	public void setWallJump(bool active)
+	{
+		wallJump = active;
+	}
+
     public void deathReset()
     {
         gameObject.transform.position = startPos;
         setHitPoints(100);
     }
 
+    public void setNoJump(bool noJump)
+    {
+        this.noJump = noJump;
+    }
 }
