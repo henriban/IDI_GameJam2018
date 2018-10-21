@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class ChangeCostume : MonoBehaviour {
 
-    private string skinName = "oldman_bald_walk";
+    public SpriteRenderer spriteRenderer;
+
+    private string skinName = "oldman_bald";
     private string folder = "BaldMan";
-    public SpriteRenderer renderer;
 
     public void setSkinName(string folder, string skinName){
         this.folder = folder;
@@ -15,10 +16,11 @@ public class ChangeCostume : MonoBehaviour {
 	
 	// Update is called once per frame
 	void LateUpdate () {
-        Sprite[] subSprites = Resources.LoadAll<Sprite>("Sprites/" + folder + "/" + skinName);
+        string spriteName = spriteRenderer.sprite.name;
+        string spriteAction = spriteName.Split("_"[0])[2];
 
-        string spriteName = renderer.sprite.name;
-        
+        Sprite[] subSprites = Resources.LoadAll<Sprite>("Sprites/" + folder + "/" + skinName + "_" + spriteAction);
+
         Sprite newSprite = null;
         foreach (Sprite sprite in subSprites) {
             if (sprite.name[sprite.name.Length - 1] == spriteName[spriteName.Length - 1]) {
@@ -26,7 +28,10 @@ public class ChangeCostume : MonoBehaviour {
             }
         }
         if (newSprite) {
-            renderer.sprite = newSprite;
+            spriteRenderer.sprite = newSprite;
+        }
+        if (Input.GetKeyDown(KeyCode.P)) {
+            print("Sprites/" + folder + "/" + skinName + "_" + spriteAction);
         }
 	}
 }

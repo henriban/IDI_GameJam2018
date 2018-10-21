@@ -1,13 +1,15 @@
 fileFormatVersion: 2
-guid: 14d0f8a419188a842a7f060f66d4a4bc
+guid: b188895dde1674709875e06ff10e9792
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fighter_propeller_jump_0
-    21300002: fighter_propeller_jump_1
-    21300004: fighter_propeller_jump_2
-    21300006: fighter_propeller_jump_3
-    21300008: fighter_propeller_jump_4
-    21300010: fighter_propeller_jump_5
+    21300000: princess_propeller_walk_0
+    21300002: princess_propeller_walk_1
+    21300004: princess_propeller_walk_2
+    21300006: princess_propeller_walk_3
+    21300008: princess_propeller_walk_4
+    21300010: princess_propeller_walk_5
+    21300012: princess_propeller_walk_6
+    21300014: princess_propeller_walk_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,10 +92,30 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fighter_propeller_jump_0
+      name: princess_propeller_walk_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 6
+        y: 3
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9621f671596472fbce9df724991597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: princess_propeller_walk_1
+      rect:
+        serializedVersion: 2
+        x: 39
         y: 3
         width: 16
         height: 25
@@ -104,39 +126,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed6e176261b3b4a5389ac0ae4d29e756
+      spriteID: 0ee8f7f3c8b014a698d7ddd59465ae66
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_1
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 3
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ed3402872ccb46ee94a8acc0acf220c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fighter_propeller_jump_2
+      name: princess_propeller_walk_2
       rect:
         serializedVersion: 2
         x: 71
         y: 3
         width: 16
-        height: 21
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c03be5e27e2e4ef596862506ceb4592
+      spriteID: 719fb5de5186043df85dc5aace88c53f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_3
+      name: princess_propeller_walk_3
       rect:
         serializedVersion: 2
-        x: 104
+        x: 102
         y: 3
-        width: 15
-        height: 23
+        width: 17
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,19 +166,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26b79fe8cfca246f5882c7892cf53a8d
+      spriteID: 6db473131e8c249f0977335a74e4a2f2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_4
+      name: princess_propeller_walk_4
       rect:
         serializedVersion: 2
-        x: 137
+        x: 134
         y: 3
-        width: 15
-        height: 27
+        width: 16
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,19 +186,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 735100a4e58a04bca918936225864168
+      spriteID: ea3ac62caf9a34c03829c63079355c95
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_5
+      name: princess_propeller_walk_5
       rect:
         serializedVersion: 2
-        x: 169
+        x: 167
         y: 3
         width: 15
-        height: 27
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,7 +206,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a65d7322efbc4c10885c24da5ff723c
+      spriteID: 780e4118de40f43acaaf302027b47538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: princess_propeller_walk_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 3
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963e49a43bc4446019e8e1d35b0aaabd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: princess_propeller_walk_7
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 3
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26071869913c0450292c4e1aa3f584d2
       vertices: []
       indices: 
       edges: []
@@ -212,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0708ff4a0deba3a4dbdb1118f2c804c0
+    spriteID: d0a68ac30d9d94a148f15b3646d3bcbd
     vertices: []
     indices: 
     edges: []

@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class BaeBlade : MonoBehaviour, Costume_Interface {
 	public int getDamage() {
-		throw new System.NotImplementedException();
+        return 0;
 	}
 
 	public string getName() {
-		throw new System.NotImplementedException();
+        return "baeblade";
 	}
 
 	public void onEquip(Player p) {
-		throw new System.NotImplementedException();
+		//TODO
 	}
 
 	public void onSpecial(Player p) {
-		throw new System.NotImplementedException();
+		//TODO
 	}
 
 	// Use this for initialization

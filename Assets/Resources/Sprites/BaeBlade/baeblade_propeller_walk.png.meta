@@ -1,13 +1,15 @@
 fileFormatVersion: 2
-guid: 14d0f8a419188a842a7f060f66d4a4bc
+guid: afc87f578f14944a8b7014d590a9dcb3
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fighter_propeller_jump_0
-    21300002: fighter_propeller_jump_1
-    21300004: fighter_propeller_jump_2
-    21300006: fighter_propeller_jump_3
-    21300008: fighter_propeller_jump_4
-    21300010: fighter_propeller_jump_5
+    21300000: baeblade_propeller_walk_0
+    21300002: baeblade_propeller_walk_1
+    21300004: baeblade_propeller_walk_2
+    21300006: baeblade_propeller_walk_3
+    21300008: baeblade_propeller_walk_4
+    21300010: baeblade_propeller_walk_5
+    21300012: baeblade_propeller_walk_6
+    21300014: baeblade_propeller_walk_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,7 +92,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fighter_propeller_jump_0
+      name: baeblade_propeller_walk_0
       rect:
         serializedVersion: 2
         x: 7
@@ -104,17 +106,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed6e176261b3b4a5389ac0ae4d29e756
+      spriteID: 44383c9a98aef46b1ae5a1c159a900d0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_1
+      name: baeblade_propeller_walk_1
       rect:
         serializedVersion: 2
         x: 39
-        y: 3
+        y: 4
         width: 16
         height: 24
       alignment: 0
@@ -124,19 +126,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ed3402872ccb46ee94a8acc0acf220c
+      spriteID: a1afb1b47597a45659e41889ece486a5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_2
+      name: baeblade_propeller_walk_2
       rect:
         serializedVersion: 2
         x: 71
+        y: 4
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5187f6dea484ea2b6a6951ef081536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_propeller_walk_3
+      rect:
+        serializedVersion: 2
+        x: 103
         y: 3
         width: 16
-        height: 21
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,19 +166,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c03be5e27e2e4ef596862506ceb4592
+      spriteID: 40ab25fe6dcc5475b8e31fcc1eb7414c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_3
+      name: baeblade_propeller_walk_4
       rect:
         serializedVersion: 2
-        x: 104
-        y: 3
-        width: 15
-        height: 23
+        x: 135
+        y: 4
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,19 +186,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26b79fe8cfca246f5882c7892cf53a8d
+      spriteID: 52fade9cd48634f33b630f0101016e01
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_4
+      name: baeblade_propeller_walk_5
       rect:
         serializedVersion: 2
-        x: 137
-        y: 3
-        width: 15
-        height: 27
+        x: 167
+        y: 4
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,19 +206,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 735100a4e58a04bca918936225864168
+      spriteID: 9b48aadbffd204710b05688f1094ebd6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_5
+      name: baeblade_propeller_walk_6
       rect:
         serializedVersion: 2
-        x: 169
+        x: 199
         y: 3
-        width: 15
-        height: 27
+        width: 16
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,7 +226,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a65d7322efbc4c10885c24da5ff723c
+      spriteID: f9823bc0e84334541a9d79029d561ed2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_propeller_walk_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 3
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ecece444bc14f77a825791fb421e14
       vertices: []
       indices: 
       edges: []
@@ -212,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0708ff4a0deba3a4dbdb1118f2c804c0
+    spriteID: c1b8e48d923eb42229e9a8f56a82bb15
     vertices: []
     indices: 
     edges: []

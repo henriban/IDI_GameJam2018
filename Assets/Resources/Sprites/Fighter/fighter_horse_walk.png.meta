@@ -1,13 +1,15 @@
 fileFormatVersion: 2
-guid: 14d0f8a419188a842a7f060f66d4a4bc
+guid: cbc3e4fb7198a45ee8e23b4d1033d444
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fighter_propeller_jump_0
-    21300002: fighter_propeller_jump_1
-    21300004: fighter_propeller_jump_2
-    21300006: fighter_propeller_jump_3
-    21300008: fighter_propeller_jump_4
-    21300010: fighter_propeller_jump_5
+    21300000: fighter_horse_walk_0
+    21300002: fighter_horse_walk_1
+    21300004: fighter_horse_walk_2
+    21300006: fighter_horse_walk_3
+    21300008: fighter_horse_walk_4
+    21300010: fighter_horse_walk_5
+    21300012: fighter_horse_walk_6
+    21300014: fighter_horse_walk_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,32 +92,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fighter_propeller_jump_0
+      name: fighter_horse_walk_0
       rect:
         serializedVersion: 2
         x: 7
         y: 3
-        width: 16
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed6e176261b3b4a5389ac0ae4d29e756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fighter_propeller_jump_1
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 3
-        width: 16
+        width: 20
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,38 +106,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ed3402872ccb46ee94a8acc0acf220c
+      spriteID: 4b66326aa96ec47869c0afb70be88e00
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_2
+      name: fighter_horse_walk_1
       rect:
         serializedVersion: 2
-        x: 71
-        y: 3
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c03be5e27e2e4ef596862506ceb4592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fighter_propeller_jump_3
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 3
-        width: 15
+        x: 39
+        y: 4
+        width: 20
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -164,19 +126,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26b79fe8cfca246f5882c7892cf53a8d
+      spriteID: ca8aea586b1d846578a236911aa2cda3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_4
+      name: fighter_horse_walk_2
       rect:
         serializedVersion: 2
-        x: 137
-        y: 3
-        width: 15
-        height: 27
+        x: 71
+        y: 4
+        width: 20
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 735100a4e58a04bca918936225864168
+      spriteID: 9342ec968d77944d2864c5535cc3dfc4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_5
+      name: fighter_horse_walk_3
       rect:
         serializedVersion: 2
-        x: 169
+        x: 104
         y: 3
-        width: 15
-        height: 27
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,7 +166,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a65d7322efbc4c10885c24da5ff723c
+      spriteID: 1ed1c77b3884340da95e989ecd267006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fighter_horse_walk_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 3
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e5df580affc4c0098fdfa41487b2d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fighter_horse_walk_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 4
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641e0f7f3a44c4391a8a149cbcade030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fighter_horse_walk_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 4
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094190298918c40b5b0e8066442c24ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fighter_horse_walk_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 3
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4029fa5cbe88744988908ff1df5e01c0
       vertices: []
       indices: 
       edges: []
@@ -212,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0708ff4a0deba3a4dbdb1118f2c804c0
+    spriteID: c98dabfe0ff434bea8b87732216db1b1
     vertices: []
     indices: 
     edges: []

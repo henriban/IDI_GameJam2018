@@ -1,13 +1,15 @@
 fileFormatVersion: 2
-guid: 14d0f8a419188a842a7f060f66d4a4bc
+guid: 2aab67fa29fe4422793fe3358d7c9cd4
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fighter_propeller_jump_0
-    21300002: fighter_propeller_jump_1
-    21300004: fighter_propeller_jump_2
-    21300006: fighter_propeller_jump_3
-    21300008: fighter_propeller_jump_4
-    21300010: fighter_propeller_jump_5
+    21300000: baeblade_horse_walk_0
+    21300002: baeblade_horse_walk_1
+    21300004: baeblade_horse_walk_2
+    21300006: baeblade_horse_walk_3
+    21300008: baeblade_horse_walk_4
+    21300010: baeblade_horse_walk_5
+    21300012: baeblade_horse_walk_6
+    21300014: baeblade_horse_walk_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,32 +92,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fighter_propeller_jump_0
+      name: baeblade_horse_walk_0
       rect:
         serializedVersion: 2
         x: 7
         y: 3
-        width: 16
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed6e176261b3b4a5389ac0ae4d29e756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fighter_propeller_jump_1
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 3
-        width: 16
+        width: 20
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,38 +106,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ed3402872ccb46ee94a8acc0acf220c
+      spriteID: d3554e653d6704173b57adb12f84a32a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_2
+      name: baeblade_horse_walk_1
       rect:
         serializedVersion: 2
-        x: 71
-        y: 3
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c03be5e27e2e4ef596862506ceb4592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fighter_propeller_jump_3
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 3
-        width: 15
+        x: 39
+        y: 4
+        width: 20
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -164,19 +126,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26b79fe8cfca246f5882c7892cf53a8d
+      spriteID: d368375906ca1468f8eeda000d60cecd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_4
+      name: baeblade_horse_walk_2
       rect:
         serializedVersion: 2
-        x: 137
-        y: 3
-        width: 15
-        height: 27
+        x: 71
+        y: 4
+        width: 20
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 735100a4e58a04bca918936225864168
+      spriteID: 961ef2012c6814647bbef6e35c4618ca
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_5
+      name: baeblade_horse_walk_3
       rect:
         serializedVersion: 2
-        x: 169
+        x: 103
         y: 3
-        width: 15
-        height: 27
+        width: 20
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,7 +166,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a65d7322efbc4c10885c24da5ff723c
+      spriteID: 212f0258853a94638b4e765be44771c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_horse_walk_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 4
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8a7cbed8d16492e8ec684f02cdcb1e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_horse_walk_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 4
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fdaa8f719e7b45cc9cb053c0323ee73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_horse_walk_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 3
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cccd22a35bd1142b0bc519b5aa47f560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_horse_walk_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 3
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47975bf3bc9ed4f03b3e1d4899e42f07
       vertices: []
       indices: 
       edges: []
@@ -212,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0708ff4a0deba3a4dbdb1118f2c804c0
+    spriteID: 2da97d9a2b3dc440c84353e6050d5b3e
     vertices: []
     indices: 
     edges: []
