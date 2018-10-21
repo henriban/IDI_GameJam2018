@@ -32,6 +32,7 @@ public class Player : Character {
     private bool canDoubleJump = false;
     private int numberOfJumps;
     private Vector2 startPos;
+    private Vector2 startSize;
 
     // Use this for initialization
     void Start () {
@@ -46,6 +47,7 @@ public class Player : Character {
         rb2d = GetComponent<Rigidbody2D>();
         bc2d = GetComponent<BoxCollider2D>();
         startPos = rb2d.position;
+        startSize = bc2d.size;
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         animationClip = GetComponent<AnimationClip>();
@@ -54,18 +56,13 @@ public class Player : Character {
         hats = new List<Hat_Interface>();
 		costumes = new List<Costume_Interface>();
 
-        hats.Add(new Bald());
-        hats.Add(new Barrel());
-        costumes.Add(new OldMan());
+        addHat(new Bald());
+        addCostume(new OldMan());
 
         activeHat = 0;
         activeCostume = 0;
         numberOfJumps = 0;
 
-        hats.Add(new Propeller());
-        hats.Add(new HorseHead());
-        costumes.Add(new BaeBlade());
-        costumes.Add(new Fighter());
 	}
 
 	private void Update() {
@@ -107,44 +104,35 @@ public class Player : Character {
         {
             faceDirection = Input.GetAxisRaw("Horizontal");
         }
-	}
 
-	// Update is called once per frame
-	void FixedUpdate () {
+		animator.SetFloat("verticalSpeed", rb2d.velocity.y);
 
-        animator.SetFloat("verticalSpeed", rb2d.velocity.y);
-
-        //Inputs
-        if (Input.GetAxis("Horizontal") != 0 && canMoveHorizontaly(Input.GetAxis("Horizontal")))
-        {
-            base.moveHorizontal(rb2d, Input.GetAxis("Horizontal"));
-        }
-
-        if (Input.GetAxisRaw("Vertical") > 0.0f && canJump())
-        {
-            canDoubleJump = false;
-            base.jump(rb2d);
-            numberOfJumps += 1;
-        }
-
-        if (Input.GetAxisRaw("Vertical") == 0.0f)
-        {
-            canDoubleJump = true;
-        }
-
-
-		if (Input.GetAxisRaw ("Vertical") > 0.0f && !canMoveHorizontaly (Input.GetAxis ("Horizontal")) && !canJump())
+		//Inputs
+		if (Input.GetAxis("Horizontal") != 0 && canMoveHorizontaly (Input.GetAxis ("Horizontal")) )
 		{
-			base.jump(rb2d);
-			print ("hey");
-			print (!canJump ());
-			print (!canMoveHorizontaly (Input.GetAxis ("Horizontal")));
-			print (Input.GetAxisRaw ("Vertical") > 0.0f);
-
+			base.moveHorizontal(rb2d, Input.GetAxis("Horizontal"));
 		}
 
 
-    }
+		if (Input.GetAxisRaw("Vertical") > 0.0f && canJump())
+
+		{
+			canDoubleJump = false;
+			base.jump(rb2d);
+			numberOfJumps += 1;
+		}
+
+		if (Input.GetAxisRaw("Vertical") == 0.0f)
+		{
+			canDoubleJump = true;
+		}
+
+
+		if (Input.GetAxisRaw ("Vertical") > 0.0f && !canMoveHorizontaly (Input.GetAxis ("Horizontal")) && wallJump) {
+			rb2d.AddForce (new Vector2(10 * -getDirection(), 10), ForceMode2D.Impulse);
+		}
+	}
+		
 
     private bool canJump()
     {
@@ -184,8 +172,9 @@ public class Player : Character {
         foreach (Collider2D collider in firstEnemyCollider){
             collider.GetComponent<Character>().takeDamage(getAttackDamage(), faceDirection);
         }
-
     }
+		
+
 
     private bool canMoveHorizontaly(float direction)
     {
@@ -198,9 +187,10 @@ public class Player : Character {
         Vector2 position = rb2d.transform.position;
         Vector2 pointToCheck = new Vector2(position.x + bc2d.size.x * transform.localScale.x * direction, position.y);
 
-        firstOverlappingGroundCollider = Physics2D.OverlapBox(pointToCheck, new Vector2(0.1f, bc2d.size.y * transform.localScale.y - 0.1f), 0f, groundMask);
+        firstOverlappingGroundCollider = Physics2D.OverlapBox(pointToCheck, new Vector2(0.2f, bc2d.size.y * transform.localScale.y - 0.1f), 0f, groundMask);
 
         bool toMove = firstOverlappingGroundCollider == null;
+
         return toMove;
     }
 
@@ -238,6 +228,11 @@ public class Player : Character {
     public void costumeTransform(string folder, string costume)
     {
         changeCostume.setSkinName(folder, costume);
+        if (costume.Contains("frog")) {
+            bc2d.size = new Vector2(0.3f, 0.25f);
+        } else {
+            bc2d.size = startSize;
+        }
     }
 
     public void addHat(Hat_Interface hat) {
@@ -261,6 +256,7 @@ public class Player : Character {
     public void deathReset()
     {
         gameObject.transform.position = startPos;
+        rb2d.velocity.Set(0, 0);
         setHitPoints(100);
     }
 

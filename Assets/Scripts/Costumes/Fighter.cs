@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Fighter : MonoBehaviour, Costume_Interface {
 
-    private int damage = 20;
+    private int damage = 50;
 
     public int getDamage()
     {
@@ -19,7 +19,7 @@ public class Fighter : MonoBehaviour, Costume_Interface {
 
     public void onSpecial(Player p)
     {
-        p.attack(10.0f);
+        p.attack(3.0f);
     }
 
     // Use this for initialization

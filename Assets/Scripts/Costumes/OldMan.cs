@@ -6,7 +6,7 @@ public class OldMan : MonoBehaviour, Costume_Interface {
 
     public int getDamage()
     {
-        return 1;
+        return 25;
     }
 
     public string getName()
@@ -17,17 +17,6 @@ public class OldMan : MonoBehaviour, Costume_Interface {
     public void onSpecial(Player p)
     {
         p.attack(getDamage());
-    }
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
 
     }
 }

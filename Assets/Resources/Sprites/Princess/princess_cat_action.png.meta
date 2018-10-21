@@ -1,17 +1,13 @@
 fileFormatVersion: 2
-guid: d98ea9f442d685e43b8afd5c9de7fcb9
+guid: a1c6227bc4530475986d920723c6a702
 TextureImporter:
   fileIDToRecycleName:
-    21300000: slimeBOIWithHAT_0
-    21300002: slimeBOIWithHAT_1
-    21300004: slimeBOIWithHAT_2
-    21300006: slimeBOIWithHAT_3
-    21300008: slimeBOIWithHAT_4
-    21300010: slimeBOIWithHAT_5
-    21300012: slimeBOIWithHAT_6
-    21300014: slimeBOIWithHAT_7
-    21300016: slimeBOIWithHAT_8
-    21300018: slimeBOIWithHAT_9
+    21300000: princess_cat_action_0
+    21300002: princess_cat_action_1
+    21300004: princess_cat_action_2
+    21300006: princess_cat_action_3
+    21300008: princess_cat_action_4
+    21300010: princess_cat_action_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -94,13 +90,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: slimeBOIWithHAT_0
+      name: princess_cat_action_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 6
-        width: 17
-        height: 11
+        x: 6
+        y: 3
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,19 +104,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 532ea01b66d70884f9246057708b27fd
+      spriteID: 10242709bbc4443d4845f685ac4d28e1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slimeBOIWithHAT_1
+      name: princess_cat_action_1
       rect:
         serializedVersion: 2
         x: 39
-        y: 6
-        width: 17
-        height: 10
+        y: 3
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,18 +124,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03b0ea3d9f91cf44c959e80d4e797137
+      spriteID: 5c96117aa179a46fb96538306ba13a3c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slimeBOIWithHAT_2
+      name: princess_cat_action_2
       rect:
         serializedVersion: 2
-        x: 71
-        y: 6
-        width: 17
+        x: 74
+        y: 3
+        width: 9
         height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -148,19 +144,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2f41e11f0cfe10468a4e08ae510f4d3
+      spriteID: bc083bbb8e49a49049c6fb6269666000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slimeBOIWithHAT_3
+      name: princess_cat_action_3
       rect:
         serializedVersion: 2
-        x: 104
-        y: 6
-        width: 15
-        height: 17
+        x: 108
+        y: 3
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,19 +164,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fcffeda7c78b4c43acd52842b589933
+      spriteID: 02bff8471eec447fdae568fa6e28bc4d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slimeBOIWithHAT_4
+      name: princess_cat_action_4
       rect:
         serializedVersion: 2
-        x: 136
-        y: 9
-        width: 14
-        height: 16
+        x: 140
+        y: 3
+        width: 8
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,19 +184,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ef40c7bce2c1f649b99d800703fd761
+      spriteID: 31459e874e8ef428dbdcd8092a0b0f75
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: slimeBOIWithHAT_5
+      name: princess_cat_action_5
       rect:
         serializedVersion: 2
-        x: 168
-        y: 11
-        width: 14
-        height: 15
+        x: 171
+        y: 3
+        width: 9
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,87 +204,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69a7d595f7bd5704b989a40bccffe167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slimeBOIWithHAT_6
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 11
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47373116db898a1418d2ccb4f8f3170a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slimeBOIWithHAT_7
-      rect:
-        serializedVersion: 2
-        x: 232
-        y: 11
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8db9a9d6f02ff4a48a15b921171066cf
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slimeBOIWithHAT_8
-      rect:
-        serializedVersion: 2
-        x: 263
-        y: 8
-        width: 14
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d0f837a671ce9441a31841fafa8135b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: slimeBOIWithHAT_9
-      rect:
-        serializedVersion: 2
-        x: 295
-        y: 6
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a346bce2e52ae354b8735cf4ad2c44ee
+      spriteID: 780fd3987c8b84524a3a424ca786cb68
       vertices: []
       indices: 
       edges: []
@@ -296,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ec828b5ef2fe7024bb356e7ddd4b7350
+    spriteID: b27e9b13374cb4fa1bdaec25eeef124c
     vertices: []
     indices: 
     edges: []
