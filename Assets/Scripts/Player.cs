@@ -46,10 +46,11 @@ public class Player : Character {
         animationClip = GetComponent<AnimationClip>();
 
         hats = new List<Hat_Interface>();
-		    costumes = new List<Costume_Interface>();
+		costumes = new List<Costume_Interface>();
+
         hats.Add(new Bald());
-        hats.Add(new Propeller());
         costumes.Add(new OldMan());
+
         activeHat = 0;
         activeCostume = 0;
         numberOfJumps = 0;

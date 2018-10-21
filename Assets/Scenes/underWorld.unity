@@ -223,8 +223,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Spline:
     m_IsOpenEnded: 1
     m_ControlPoints:
@@ -386,8 +386,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Spline:
     m_IsOpenEnded: 1
     m_ControlPoints:
@@ -549,8 +549,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Spline:
     m_IsOpenEnded: 1
     m_ControlPoints:
@@ -1560,8 +1560,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -2044,8 +2044,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1811803957}
   - component: {fileID: 1811803956}
-  - component: {fileID: 1811803958}
   - component: {fileID: 1811803959}
+  - component: {fileID: 1811803958}
   m_Layer: 0
   m_Name: barrelHat
   m_TagString: Item
@@ -2120,9 +2120,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1811803955}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b28f0443b2351e74c81f278f83881da7, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Script: {fileID: 11500000, guid: f7048403eab217041ab9341d5be8d726, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &1811803959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2158,6 +2158,7 @@ GameObject:
   - component: {fileID: 1817000223}
   - component: {fileID: 1817000222}
   - component: {fileID: 1817000224}
+  - component: {fileID: 1817000225}
   m_Layer: 8
   m_Name: horseHead
   m_TagString: Item
@@ -2218,7 +2219,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1817000221}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 75, y: -17.04, z: 0}
+  m_LocalPosition: {x: 76.2, y: -17.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2249,6 +2250,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9375, y: 0.9375}
   m_EdgeRadius: 0
+--- !u!114 &1817000225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1817000221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc25631b3368ce24ba8e6f883a474220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1895200082
 GameObject:
   m_ObjectHideFlags: 0
@@ -2315,8 +2327,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Spline:
     m_IsOpenEnded: 1
     m_ControlPoints:
@@ -2412,35 +2424,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &2047581499
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2047581493}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4f7e86f3c56bf4dfb8b0ae6ee90b9963, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage:
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2047581500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2047581493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89d984a4d81274c79835db82b9bd95f1, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  skinName: oldman_bald_walk
-  folder: OldMan
-  renderer: {fileID: 2047581497}
