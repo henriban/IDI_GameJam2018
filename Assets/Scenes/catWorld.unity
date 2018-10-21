@@ -1783,7 +1783,7 @@ MonoBehaviour:
   m_AdaptiveUV: 1
   m_UpdateCollider: 1
   m_ColliderDetail: 16
-  m_ColliderOffset: 0.5
+  m_ColliderOffset: 0
   m_ColliderCornerType: 1
 --- !u!1971053207 &1328365081
 SpriteShapeRenderer:
@@ -1865,7 +1865,7 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.5
   m_Points:
   - {x: 8.02235, y: -15.4995}
   - {x: 8.04466, y: -15.498}
