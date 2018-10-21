@@ -28,6 +28,7 @@ public class Player : Character {
     private bool doubleJump = false;
     private bool canDoubleJump = false;
     private int numberOfJumps;
+    private Vector2 startPos;
 
     // Use this for initialization
     void Start () {
@@ -41,6 +42,7 @@ public class Player : Character {
 
         rb2d = GetComponent<Rigidbody2D>();
         bc2d = GetComponent<BoxCollider2D>();
+        startPos = rb2d.position;
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         animationClip = GetComponent<AnimationClip>();
@@ -223,4 +225,11 @@ public class Player : Character {
     {
         doubleJump = active;
     }
+
+    public void deathReset()
+    {
+        gameObject.transform.position = startPos;
+        setHitPoints(100);
+    }
+
 }
