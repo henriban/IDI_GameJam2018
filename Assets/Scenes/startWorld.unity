@@ -186,6 +186,11 @@ Prefab:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.84375
       objectReference: {fileID: 0}
+    - target: {fileID: 114799522366294136, guid: fb726764445c346668d18bb9eed726b5,
+        type: 2}
+      propertyPath: canMove
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb726764445c346668d18bb9eed726b5, type: 2}
   m_IsPrefabAsset: 0
@@ -436,7 +441,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.02339375, y: 0.031192064}
