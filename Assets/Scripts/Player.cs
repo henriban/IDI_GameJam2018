@@ -25,6 +25,7 @@ public class Player : Character {
     private Collider2D firstOverlappingGroundCollider;
 
     private float faceDirection = 1.0f;
+    private bool noJump = false;
     private bool doubleJump = false;
 	private bool wallJump = false;
     private bool canDoubleJump = false;
@@ -52,6 +53,7 @@ public class Player : Character {
 		costumes = new List<Costume_Interface>();
 
         hats.Add(new Bald());
+        hats.Add(new Barrel());
         costumes.Add(new OldMan());
 
         activeHat = 0;
@@ -144,6 +146,11 @@ public class Player : Character {
 
     private bool canJump()
     {
+        if (noJump)
+        {
+            return false;
+        }
+
         if (doubleJump && numberOfJumps <= 1 && canDoubleJump)
         {
             return true;
@@ -251,4 +258,8 @@ public class Player : Character {
         setHitPoints(100);
     }
 
+    public void setNoJump(bool noJump)
+    {
+        this.noJump = noJump;
+    }
 }
