@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 14d0f8a419188a842a7f060f66d4a4bc
+guid: 3cd8051709fd148bc930156aa907d338
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fighter_propeller_jump_0
-    21300002: fighter_propeller_jump_1
-    21300004: fighter_propeller_jump_2
-    21300006: fighter_propeller_jump_3
-    21300008: fighter_propeller_jump_4
-    21300010: fighter_propeller_jump_5
+    21300000: oldman_cat_jump_0
+    21300002: oldman_cat_jump_1
+    21300004: oldman_cat_jump_2
+    21300006: oldman_cat_jump_3
+    21300008: oldman_cat_jump_4
+    21300010: oldman_cat_jump_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,32 +90,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fighter_propeller_jump_0
+      name: oldman_cat_jump_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 11
         y: 3
-        width: 16
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed6e176261b3b4a5389ac0ae4d29e756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fighter_propeller_jump_1
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 3
-        width: 16
+        width: 11
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,38 +104,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ed3402872ccb46ee94a8acc0acf220c
+      spriteID: e8787b51d44544b3e8519499ceb7c095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_2
+      name: oldman_cat_jump_1
       rect:
         serializedVersion: 2
-        x: 71
+        x: 43
         y: 3
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c03be5e27e2e4ef596862506ceb4592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fighter_propeller_jump_3
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 3
-        width: 15
+        width: 11
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -164,18 +124,58 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26b79fe8cfca246f5882c7892cf53a8d
+      spriteID: 2c79fb7f532034717a5ed4932e2face8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_4
+      name: oldman_cat_jump_2
       rect:
         serializedVersion: 2
-        x: 137
+        x: 75
         y: 3
-        width: 15
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424f46a10cf1c4fc28f182544f2280c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldman_cat_jump_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 3
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a057fb2c7c2047058062fec06a1ac90
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldman_cat_jump_4
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 3
+        width: 10
         height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -184,18 +184,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 735100a4e58a04bca918936225864168
+      spriteID: ef65d289424464cbd8f9d909221ecad1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_5
+      name: oldman_cat_jump_5
       rect:
         serializedVersion: 2
-        x: 169
+        x: 173
         y: 3
-        width: 15
+        width: 10
         height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -204,7 +204,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a65d7322efbc4c10885c24da5ff723c
+      spriteID: c6341144e13f54ea7ad49945714e77a1
       vertices: []
       indices: 
       edges: []
@@ -212,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0708ff4a0deba3a4dbdb1118f2c804c0
+    spriteID: e1832b1b434cc4eccb5e92e01ae6b6c8
     vertices: []
     indices: 
     edges: []

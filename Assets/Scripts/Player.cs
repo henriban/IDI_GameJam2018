@@ -55,6 +55,9 @@ public class Player : Character {
         activeCostume = 0;
         numberOfJumps = 0;
 
+        hats.Add(new Propeller());
+        costumes.Add(new BaeBlade());
+        costumes.Add(new Fighter());
 	}
 
 	private void Update() {
@@ -78,10 +81,10 @@ public class Player : Character {
 		//Costumes
 		if(Input.GetKeyDown(KeyCode.E)) {
 			if(activeCostume < costumes.Count - 1) {
-				activeHat++;
+				activeCostume++;
 			}
 			else {
-				activeHat = 0;
+				activeCostume = 0;
 			}
 			setAttackDamage(costumes[activeCostume].getDamage());
             costumeChange();
@@ -99,6 +102,8 @@ public class Player : Character {
 
 	// Update is called once per frame
 	void FixedUpdate () {
+
+        animator.SetFloat("verticalSpeed", rb2d.velocity.y);
 
         //Inputs
         if (Input.GetAxis("Horizontal") != 0 && canMoveHorizontaly(Input.GetAxis("Horizontal")))
@@ -151,7 +156,7 @@ public class Player : Character {
 
         Collider2D[] firstEnemyCollider = Physics2D.OverlapBoxAll(pointToCheck, attackSize, 0.0f, enemyMask);
         foreach (Collider2D collider in firstEnemyCollider){
-            collider.GetComponent<Character>().takeDamage(getAttackDamage());
+            collider.GetComponent<Character>().takeDamage(getAttackDamage(), faceDirection);
         }
 
     }
@@ -166,7 +171,7 @@ public class Player : Character {
         // Check if the given point next to the player is ground
         Vector2 position = rb2d.transform.position;
         Vector2 pointToCheck = new Vector2(position.x + bc2d.size.x * transform.localScale.x * direction, position.y);
-        //firstOverlappingGroundCollider = Physics2D.OverlapCircle(pointToCheck, 0.1f, groundMask);
+
         firstOverlappingGroundCollider = Physics2D.OverlapBox(pointToCheck, new Vector2(0.1f, bc2d.size.y * transform.localScale.y - 0.1f), 0f, groundMask);
 
         bool toMove = firstOverlappingGroundCollider == null;
@@ -199,7 +204,7 @@ public class Player : Character {
         ChangeCostume changeCostume = GetComponent<ChangeCostume>();
         if (changeCostume)
         {
-            changeCostume.setSkinName(getFolder(), getCostumeString() + "_walk");
+            changeCostume.setSkinName(getFolder(), getCostumeString());
         } else {
             throw new System.Exception("No costumes");
         }

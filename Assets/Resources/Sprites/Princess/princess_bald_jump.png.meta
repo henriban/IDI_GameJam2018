@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 14d0f8a419188a842a7f060f66d4a4bc
+guid: c2b7937b91bd84eb980a30eb08798972
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fighter_propeller_jump_0
-    21300002: fighter_propeller_jump_1
-    21300004: fighter_propeller_jump_2
-    21300006: fighter_propeller_jump_3
-    21300008: fighter_propeller_jump_4
-    21300010: fighter_propeller_jump_5
+    21300000: princess_bald_jump_0
+    21300002: princess_bald_jump_1
+    21300004: princess_bald_jump_2
+    21300006: princess_bald_jump_3
+    21300008: princess_bald_jump_4
+    21300010: princess_bald_jump_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,13 +90,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fighter_propeller_jump_0
+      name: princess_bald_jump_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 6
         y: 3
-        width: 16
-        height: 25
+        width: 15
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,38 +104,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed6e176261b3b4a5389ac0ae4d29e756
+      spriteID: d10df62674e9442a18ec897150ef4ff6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_1
+      name: princess_bald_jump_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 38
         y: 3
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ed3402872ccb46ee94a8acc0acf220c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fighter_propeller_jump_2
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 3
-        width: 16
+        width: 15
         height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -144,19 +124,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c03be5e27e2e4ef596862506ceb4592
+      spriteID: 984ffa0545161459a888efa8b9d7585c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_3
+      name: princess_bald_jump_2
       rect:
         serializedVersion: 2
-        x: 104
+        x: 70
         y: 3
-        width: 15
-        height: 23
+        width: 16
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,19 +144,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26b79fe8cfca246f5882c7892cf53a8d
+      spriteID: d701b59d06fd34fe4a7df130368f3f79
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_4
+      name: princess_bald_jump_3
       rect:
         serializedVersion: 2
-        x: 137
+        x: 102
         y: 3
         width: 15
-        height: 27
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,19 +164,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 735100a4e58a04bca918936225864168
+      spriteID: 72105e96c156d4f1eab8fba5b85e8649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_5
+      name: princess_bald_jump_4
       rect:
         serializedVersion: 2
-        x: 169
+        x: 135
         y: 3
         width: 15
-        height: 27
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,7 +184,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a65d7322efbc4c10885c24da5ff723c
+      spriteID: 201634c52888f4ebb8d730752118f964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: princess_bald_jump_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 3
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4577969f6cc0c49ca946db72a1819249
       vertices: []
       indices: 
       edges: []
@@ -212,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0708ff4a0deba3a4dbdb1118f2c804c0
+    spriteID: 70b2c1984320246ca8fe0ab9fe28b532
     vertices: []
     indices: 
     edges: []

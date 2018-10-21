@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 14d0f8a419188a842a7f060f66d4a4bc
+guid: 6b43b573bba4841989b73bf694570622
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fighter_propeller_jump_0
-    21300002: fighter_propeller_jump_1
-    21300004: fighter_propeller_jump_2
-    21300006: fighter_propeller_jump_3
-    21300008: fighter_propeller_jump_4
-    21300010: fighter_propeller_jump_5
+    21300000: baeblade_cat_jump_0
+    21300002: baeblade_cat_jump_1
+    21300004: baeblade_cat_jump_2
+    21300006: baeblade_cat_jump_3
+    21300008: baeblade_cat_jump_4
+    21300010: baeblade_cat_jump_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,30 +90,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fighter_propeller_jump_0
+      name: baeblade_cat_jump_0
       rect:
         serializedVersion: 2
         x: 7
-        y: 3
-        width: 16
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed6e176261b3b4a5389ac0ae4d29e756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fighter_propeller_jump_1
-      rect:
-        serializedVersion: 2
-        x: 39
         y: 3
         width: 16
         height: 24
@@ -124,38 +104,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ed3402872ccb46ee94a8acc0acf220c
+      spriteID: 7ab6f28e2aa114dc0a12782619c7944b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_2
+      name: baeblade_cat_jump_1
       rect:
         serializedVersion: 2
-        x: 71
+        x: 39
         y: 3
         width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c03be5e27e2e4ef596862506ceb4592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fighter_propeller_jump_3
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 3
-        width: 15
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -164,18 +124,58 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26b79fe8cfca246f5882c7892cf53a8d
+      spriteID: 1131177ea1694412ea8aec98b93daceb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_4
+      name: baeblade_cat_jump_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 3
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d17f7df085df439cb0c6decb4335bf9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_cat_jump_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 3
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db2d1f2622b44bc792012c5c615c8fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baeblade_cat_jump_4
       rect:
         serializedVersion: 2
         x: 137
         y: 3
-        width: 15
+        width: 16
         height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -184,18 +184,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 735100a4e58a04bca918936225864168
+      spriteID: dfb58154c10ba4ab2a2462b3455de255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_jump_5
+      name: baeblade_cat_jump_5
       rect:
         serializedVersion: 2
         x: 169
         y: 3
-        width: 15
+        width: 16
         height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -204,7 +204,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a65d7322efbc4c10885c24da5ff723c
+      spriteID: ca139ef8552614c14b209a3cbc6c562a
       vertices: []
       indices: 
       edges: []
@@ -212,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0708ff4a0deba3a4dbdb1118f2c804c0
+    spriteID: 90ac8aa0d561e4bdbb307565baf1a1dc
     vertices: []
     indices: 
     edges: []
