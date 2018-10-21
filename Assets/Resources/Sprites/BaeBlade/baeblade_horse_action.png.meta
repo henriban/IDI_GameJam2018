@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 0fbcc882599f54a309a78c355a3d4e92
+guid: 6e3fa84b2d61a468eb30f4e3afe54625
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fighter_propeller_action_0
-    21300002: fighter_propeller_action_1
-    21300004: fighter_propeller_action_2
-    21300006: fighter_propeller_action_3
-    21300008: fighter_propeller_action_4
-    21300010: fighter_propeller_action_5
+    21300000: baeblade_horse_action_0
+    21300002: baeblade_horse_action_1
+    21300004: baeblade_horse_action_2
+    21300006: baeblade_horse_action_3
+    21300008: baeblade_horse_action_4
+    21300010: baeblade_horse_action_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,13 +90,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fighter_propeller_action_0
+      name: baeblade_horse_action_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 8
         y: 3
-        width: 16
-        height: 25
+        width: 17
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,19 +104,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1007e80a8ef934ac0ae668ae93a882fa
+      spriteID: aafd23ab9062c48aeb35dda9724ef193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_1
+      name: baeblade_horse_action_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 38
         y: 3
-        width: 23
-        height: 25
+        width: 18
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,19 +124,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8d8f7215559c499ba4c59d8c8f854b3
+      spriteID: 311668506553c46a2bd910b1c96c4fc5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_2
+      name: baeblade_horse_action_2
       rect:
         serializedVersion: 2
-        x: 71
+        x: 72
         y: 3
-        width: 20
-        height: 25
+        width: 17
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,19 +144,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90f3350e2a69d4488a17d2e63db5ceed
+      spriteID: 8d3e186fff0d1400d9e37e7c4b1a7115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_3
+      name: baeblade_horse_action_3
       rect:
         serializedVersion: 2
-        x: 103
+        x: 102
         y: 3
-        width: 20
-        height: 25
+        width: 18
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,19 +164,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2608dd32c7ec4175b38019c02d9ee31
+      spriteID: a12f41e40d10a49d6a0170d706415a4b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_4
+      name: baeblade_horse_action_4
       rect:
         serializedVersion: 2
-        x: 135
+        x: 136
         y: 3
-        width: 20
-        height: 25
+        width: 17
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,19 +184,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85a4e9636b3014921ba2debb9e01c679
+      spriteID: 05dcbf8ac4a71456792ef084289f2f1d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_5
+      name: baeblade_horse_action_5
       rect:
         serializedVersion: 2
-        x: 167
+        x: 166
         y: 3
-        width: 20
-        height: 25
+        width: 18
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,7 +204,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09d1f2f4b89444030808369dde3590c8
+      spriteID: 2a9a0416c474a412e987a331b939a835
       vertices: []
       indices: 
       edges: []
@@ -212,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d23b64a22d7c743108f89596785e29a5
+    spriteID: d02489cd0afed44c7a89f8fe7a3e00d5
     vertices: []
     indices: 
     edges: []

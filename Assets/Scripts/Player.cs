@@ -18,8 +18,9 @@ public class Player : Character {
 
 	private List<Hat_Interface> hats;
 	private List<Costume_Interface> costumes;
+    private ChangeCostume changeCostume;
 
-	private int activeHat;
+    private int activeHat;
     private int activeCostume;
 
     private Collider2D firstOverlappingGroundCollider;
@@ -48,6 +49,7 @@ public class Player : Character {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         animationClip = GetComponent<AnimationClip>();
+        changeCostume = GetComponent<ChangeCostume>();
 
         hats = new List<Hat_Interface>();
 		costumes = new List<Costume_Interface>();
@@ -59,17 +61,11 @@ public class Player : Character {
         activeHat = 0;
         activeCostume = 0;
         numberOfJumps = 0;
-        
-		hats.Add(new KittyEars());
-        //costumes.Add(new BaeBlade());
-        //costumes.Add(new Fighter());
 
         hats.Add(new Propeller());
         hats.Add(new HorseHead());
         costumes.Add(new BaeBlade());
         costumes.Add(new Fighter());
-
-
 	}
 
 	private void Update() {
@@ -103,6 +99,7 @@ public class Player : Character {
 		}
 
 		if(Input.GetKeyDown(KeyCode.Space)) {
+            animator.SetTrigger("action");
 			costumes[activeCostume].onSpecial(this);
 		}
 
@@ -136,7 +133,7 @@ public class Player : Character {
         }
 
 
-		if (Input.GetAxisRaw ("Vertical") > 0.0f && !canMoveHorizontaly (Input.GetAxis ("Horizontal")) && !canJump()) 
+		if (Input.GetAxisRaw ("Vertical") > 0.0f && !canMoveHorizontaly (Input.GetAxis ("Horizontal")) && !canJump())
 		{
 			base.jump(rb2d);
 			print ("hey");
@@ -145,7 +142,7 @@ public class Player : Character {
 			print (Input.GetAxisRaw ("Vertical") > 0.0f);
 
 		}
-			
+
 
     }
 
@@ -230,13 +227,17 @@ public class Player : Character {
     }
 
     private void costumeChange() {
-        ChangeCostume changeCostume = GetComponent<ChangeCostume>();
         if (changeCostume)
         {
-            changeCostume.setSkinName(getFolder(), getCostumeString());
+            costumeTransform(getFolder(), getCostumeString());
         } else {
             throw new System.Exception("No costumes");
         }
+    }
+
+    public void costumeTransform(string folder, string costume)
+    {
+        changeCostume.setSkinName(folder, costume);
     }
 
     public void addHat(Hat_Interface hat) {

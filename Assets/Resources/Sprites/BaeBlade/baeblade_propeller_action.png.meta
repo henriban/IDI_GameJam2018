@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 0fbcc882599f54a309a78c355a3d4e92
+guid: 09e25e44af593491f9da19774af97929
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fighter_propeller_action_0
-    21300002: fighter_propeller_action_1
-    21300004: fighter_propeller_action_2
-    21300006: fighter_propeller_action_3
-    21300008: fighter_propeller_action_4
-    21300010: fighter_propeller_action_5
+    21300000: baeblade_propeller_action_0
+    21300002: baeblade_propeller_action_1
+    21300004: baeblade_propeller_action_2
+    21300006: baeblade_propeller_action_3
+    21300008: baeblade_propeller_action_4
+    21300010: baeblade_propeller_action_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,10 +90,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fighter_propeller_action_0
+      name: baeblade_propeller_action_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 8
         y: 3
         width: 16
         height: 25
@@ -104,18 +104,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1007e80a8ef934ac0ae668ae93a882fa
+      spriteID: 4aa4139c30fac4406ba6beaf8bc76131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_1
+      name: baeblade_propeller_action_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 40
         y: 3
-        width: 23
+        width: 16
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -124,18 +124,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8d8f7215559c499ba4c59d8c8f854b3
+      spriteID: 6e9884d4bf1cd4bd4ac768fa7bd7cea0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_2
+      name: baeblade_propeller_action_2
       rect:
         serializedVersion: 2
-        x: 71
+        x: 72
         y: 3
-        width: 20
+        width: 16
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -144,18 +144,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90f3350e2a69d4488a17d2e63db5ceed
+      spriteID: a110c58cd9f034ff28773d77af36e83f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_3
+      name: baeblade_propeller_action_3
       rect:
         serializedVersion: 2
-        x: 103
+        x: 104
         y: 3
-        width: 20
+        width: 16
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -164,18 +164,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2608dd32c7ec4175b38019c02d9ee31
+      spriteID: f65ed6beb726d496b8afbd35884915de
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_4
+      name: baeblade_propeller_action_4
       rect:
         serializedVersion: 2
-        x: 135
+        x: 136
         y: 3
-        width: 20
+        width: 16
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -184,18 +184,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85a4e9636b3014921ba2debb9e01c679
+      spriteID: 579fd273d88114dd2aa6cdb90c6508e8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_5
+      name: baeblade_propeller_action_5
       rect:
         serializedVersion: 2
-        x: 167
+        x: 168
         y: 3
-        width: 20
+        width: 16
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -204,7 +204,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09d1f2f4b89444030808369dde3590c8
+      spriteID: 50d956c9d8c584ca48d1462034892a71
       vertices: []
       indices: 
       edges: []
@@ -212,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d23b64a22d7c743108f89596785e29a5
+    spriteID: cc590e85cb29a4ba69b0ae6018f697c9
     vertices: []
     indices: 
     edges: []

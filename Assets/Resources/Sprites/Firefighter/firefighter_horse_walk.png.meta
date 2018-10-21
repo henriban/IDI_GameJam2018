@@ -1,13 +1,15 @@
 fileFormatVersion: 2
-guid: 0fbcc882599f54a309a78c355a3d4e92
+guid: bb9764b73eca16446b3cb28019f981e1
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fighter_propeller_action_0
-    21300002: fighter_propeller_action_1
-    21300004: fighter_propeller_action_2
-    21300006: fighter_propeller_action_3
-    21300008: fighter_propeller_action_4
-    21300010: fighter_propeller_action_5
+    21300000: firefighter_horse_walk_0
+    21300002: firefighter_horse_walk_1
+    21300004: firefighter_horse_walk_2
+    21300006: firefighter_horse_walk_3
+    21300008: firefighter_horse_walk_4
+    21300010: firefighter_horse_walk_5
+    21300012: firefighter_horse_walk_6
+    21300014: firefighter_horse_walk_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -42,7 +44,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -90,13 +92,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fighter_propeller_action_0
+      name: firefighter_horse_walk_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 11
         y: 3
         width: 16
-        height: 25
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,19 +106,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1007e80a8ef934ac0ae668ae93a882fa
+      spriteID: 244f9070d9f9842d9b302f46de2d2a91
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_1
+      name: firefighter_horse_walk_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 3
-        width: 23
-        height: 25
+        x: 43
+        y: 4
+        width: 16
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,19 +126,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8d8f7215559c499ba4c59d8c8f854b3
+      spriteID: 4f717625c76ed421cbbd93eba31c88cd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_2
+      name: firefighter_horse_walk_2
       rect:
         serializedVersion: 2
-        x: 71
-        y: 3
-        width: 20
-        height: 25
+        x: 75
+        y: 4
+        width: 16
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90f3350e2a69d4488a17d2e63db5ceed
+      spriteID: dadf72208b7844044a05f0b70e87f153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_3
+      name: firefighter_horse_walk_3
       rect:
         serializedVersion: 2
-        x: 103
+        x: 108
         y: 3
-        width: 20
-        height: 25
+        width: 15
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,19 +166,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2608dd32c7ec4175b38019c02d9ee31
+      spriteID: 6d5d7faaf8e0d449c98c5d28ca4d1ab2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_4
+      name: firefighter_horse_walk_4
       rect:
         serializedVersion: 2
-        x: 135
+        x: 140
         y: 3
-        width: 20
-        height: 25
+        width: 14
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,19 +186,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85a4e9636b3014921ba2debb9e01c679
+      spriteID: eaa544a3f89524f539370322a293ce44
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_5
+      name: firefighter_horse_walk_5
       rect:
         serializedVersion: 2
-        x: 167
-        y: 3
-        width: 20
-        height: 25
+        x: 172
+        y: 4
+        width: 14
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,7 +206,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09d1f2f4b89444030808369dde3590c8
+      spriteID: 5453657be95d8423b91961f54f18bb6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firefighter_horse_walk_6
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 4
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f59f23583cac421e800bedaac570825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firefighter_horse_walk_7
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 3
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca8c7bbfdd384c28b459cc872c8ff14
       vertices: []
       indices: 
       edges: []
@@ -212,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d23b64a22d7c743108f89596785e29a5
+    spriteID: f723443e8746a4f31be0e72bd3571150
     vertices: []
     indices: 
     edges: []

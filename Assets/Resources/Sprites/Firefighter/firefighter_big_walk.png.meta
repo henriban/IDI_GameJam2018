@@ -1,13 +1,15 @@
 fileFormatVersion: 2
-guid: 0fbcc882599f54a309a78c355a3d4e92
+guid: a8c51f1c0fe0eb1439c8cbd3abbd02fb
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fighter_propeller_action_0
-    21300002: fighter_propeller_action_1
-    21300004: fighter_propeller_action_2
-    21300006: fighter_propeller_action_3
-    21300008: fighter_propeller_action_4
-    21300010: fighter_propeller_action_5
+    21300000: firefighter_big_walk_0
+    21300002: firefighter_big_walk_1
+    21300004: firefighter_big_walk_2
+    21300006: firefighter_big_walk_3
+    21300008: firefighter_big_walk_4
+    21300010: firefighter_big_walk_5
+    21300012: firefighter_big_walk_6
+    21300014: firefighter_big_walk_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -42,7 +44,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -90,13 +92,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fighter_propeller_action_0
+      name: firefighter_big_walk_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 11
         y: 3
-        width: 16
-        height: 25
+        width: 14
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,19 +106,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1007e80a8ef934ac0ae668ae93a882fa
+      spriteID: 2e4238ef43952417996c74c7040c2e53
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_1
+      name: firefighter_big_walk_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 3
-        width: 23
-        height: 25
+        x: 43
+        y: 4
+        width: 14
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,19 +126,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8d8f7215559c499ba4c59d8c8f854b3
+      spriteID: 4c8045a71e5264d7ca4ce15c7602cb47
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_2
+      name: firefighter_big_walk_2
       rect:
         serializedVersion: 2
-        x: 71
-        y: 3
-        width: 20
-        height: 25
+        x: 75
+        y: 4
+        width: 14
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90f3350e2a69d4488a17d2e63db5ceed
+      spriteID: 0fe4c3837888649508b4c6589524ab1e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_3
+      name: firefighter_big_walk_3
       rect:
         serializedVersion: 2
-        x: 103
+        x: 108
         y: 3
-        width: 20
-        height: 25
+        width: 13
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,19 +166,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2608dd32c7ec4175b38019c02d9ee31
+      spriteID: 26731740c601544f2bf09231e14373e4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_4
+      name: firefighter_big_walk_4
       rect:
         serializedVersion: 2
-        x: 135
+        x: 140
         y: 3
-        width: 20
-        height: 25
+        width: 12
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,19 +186,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85a4e9636b3014921ba2debb9e01c679
+      spriteID: 87820b649e2af436ab23284a78e9a7d3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_5
+      name: firefighter_big_walk_5
       rect:
         serializedVersion: 2
-        x: 167
-        y: 3
-        width: 20
-        height: 25
+        x: 172
+        y: 4
+        width: 12
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,7 +206,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09d1f2f4b89444030808369dde3590c8
+      spriteID: a2c1c367f28da466ab9f2a0045043bdc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firefighter_big_walk_6
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 4
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29c9da8ed4be4930948434fdba010a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firefighter_big_walk_7
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 3
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faefa96993f6d4494874c57447d4eb72
       vertices: []
       indices: 
       edges: []
@@ -212,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d23b64a22d7c743108f89596785e29a5
+    spriteID: 3f747b894df7549e1b8620ef7741f8a3
     vertices: []
     indices: 
     edges: []

@@ -1,13 +1,15 @@
 fileFormatVersion: 2
-guid: 0fbcc882599f54a309a78c355a3d4e92
+guid: a85db161d89fc4f4b9aaa5c01b694a93
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fighter_propeller_action_0
-    21300002: fighter_propeller_action_1
-    21300004: fighter_propeller_action_2
-    21300006: fighter_propeller_action_3
-    21300008: fighter_propeller_action_4
-    21300010: fighter_propeller_action_5
+    21300000: oldman_cat_walk_0
+    21300002: oldman_cat_walk_1
+    21300004: oldman_cat_walk_2
+    21300006: oldman_cat_walk_3
+    21300008: oldman_cat_walk_4
+    21300010: oldman_cat_walk_5
+    21300012: oldman_cat_walk_6
+    21300014: oldman_cat_walk_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,13 +92,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fighter_propeller_action_0
+      name: oldman_cat_walk_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 11
         y: 3
-        width: 16
-        height: 25
+        width: 11
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,19 +106,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1007e80a8ef934ac0ae668ae93a882fa
+      spriteID: 5637c4cd8d7cb4a31a359c20d7daa046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_1
+      name: oldman_cat_walk_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 3
-        width: 23
-        height: 25
+        x: 43
+        y: 4
+        width: 11
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,19 +126,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8d8f7215559c499ba4c59d8c8f854b3
+      spriteID: e7438b20f75ed42f8b28fa75ba322977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_2
+      name: oldman_cat_walk_2
       rect:
         serializedVersion: 2
-        x: 71
-        y: 3
-        width: 20
-        height: 25
+        x: 75
+        y: 4
+        width: 11
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,19 +146,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90f3350e2a69d4488a17d2e63db5ceed
+      spriteID: 0beb524c843b6485b9e0913e823ef213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_3
+      name: oldman_cat_walk_3
       rect:
         serializedVersion: 2
-        x: 103
+        x: 108
         y: 3
-        width: 20
-        height: 25
+        width: 10
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,19 +166,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2608dd32c7ec4175b38019c02d9ee31
+      spriteID: 095dc9c21e50443b99f18fe1ea98421f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_4
+      name: oldman_cat_walk_4
       rect:
         serializedVersion: 2
-        x: 135
+        x: 140
         y: 3
-        width: 20
-        height: 25
+        width: 10
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,19 +186,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85a4e9636b3014921ba2debb9e01c679
+      spriteID: 8c4937dd701af4702a156d988ca6f8db
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighter_propeller_action_5
+      name: oldman_cat_walk_5
       rect:
         serializedVersion: 2
-        x: 167
-        y: 3
-        width: 20
-        height: 25
+        x: 172
+        y: 4
+        width: 10
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,7 +206,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09d1f2f4b89444030808369dde3590c8
+      spriteID: d44b8f8513c5a45128ca4573afd92000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldman_cat_walk_6
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 4
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e84a983815047f39cd85c3eee70d35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oldman_cat_walk_7
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 3
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a14f5c509e724bc7ac854f7c40d898c
       vertices: []
       indices: 
       edges: []
@@ -212,7 +254,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d23b64a22d7c743108f89596785e29a5
+    spriteID: 6b50eeecb848c4edfba678466db6d0dd
     vertices: []
     indices: 
     edges: []
