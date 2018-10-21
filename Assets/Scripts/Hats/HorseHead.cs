@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class HorseHead : MonoBehaviour, Hat_Interface {
 
+    private float movementBoost = 20.0f;
+
     public string getName() {
         return "horse";
     }
 
     public void onEquip() {
-        // TODO: reset player to default
+        float newMovementSpeed = Player.player.getMovementSpeed() + movementBoost;
+        Player.player.setMovementSpeed(newMovementSpeed);
     }
 
     public void unequip() {
-        return;
+        float newMovementSpeed = Player.player.getMovementSpeed() - movementBoost;
+        Player.player.setMovementSpeed(newMovementSpeed);
     }
 
     // Use this for initialization
