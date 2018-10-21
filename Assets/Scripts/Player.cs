@@ -32,6 +32,7 @@ public class Player : Character {
     private bool canDoubleJump = false;
     private int numberOfJumps;
     private Vector2 startPos;
+    private Vector2 startSize;
 
     // Use this for initialization
     void Start () {
@@ -46,6 +47,7 @@ public class Player : Character {
         rb2d = GetComponent<Rigidbody2D>();
         bc2d = GetComponent<BoxCollider2D>();
         startPos = rb2d.position;
+        startSize = bc2d.size;
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         animationClip = GetComponent<AnimationClip>();
@@ -54,18 +56,9 @@ public class Player : Character {
         hats = new List<Hat_Interface>();
 		costumes = new List<Costume_Interface>();
 
-        hats.Add(new Bald());
-        hats.Add(new Barrel());
-        costumes.Add(new OldMan());
-
         activeHat = 0;
         activeCostume = 0;
         numberOfJumps = 0;
-
-        hats.Add(new Propeller());
-        hats.Add(new HorseHead());
-        costumes.Add(new BaeBlade());
-        costumes.Add(new Fighter());
 	}
 
 	private void Update() {
@@ -136,11 +129,6 @@ public class Player : Character {
 		if (Input.GetAxisRaw ("Vertical") > 0.0f && !canMoveHorizontaly (Input.GetAxis ("Horizontal")) && !canJump())
 		{
 			base.jump(rb2d);
-			print ("hey");
-			print (!canJump ());
-			print (!canMoveHorizontaly (Input.GetAxis ("Horizontal")));
-			print (Input.GetAxisRaw ("Vertical") > 0.0f);
-
 		}
 
 
@@ -238,6 +226,11 @@ public class Player : Character {
     public void costumeTransform(string folder, string costume)
     {
         changeCostume.setSkinName(folder, costume);
+        if (costume.Contains("frog")) {
+            bc2d.size = new Vector2(0.3f, 0.25f);
+        } else {
+            bc2d.size = startSize;
+        }
     }
 
     public void addHat(Hat_Interface hat) {
