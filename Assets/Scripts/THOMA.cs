@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Slimon : Character {
+public class THOMA : Character {
 
 
     private Rigidbody2D rb2d;
@@ -26,14 +26,13 @@ public class Slimon : Character {
 
     void FixedUpdate()
     {
-        float pointXToCheck = rb2d.transform.position.x + (moveDirection * (GetComponent<CircleCollider2D>().radius));
-        float pointYToCheck = rb2d.transform.position.y - GetComponent<CircleCollider2D>().bounds.extents.y;
+        float pointXToCheck = rb2d.transform.position.x + (moveDirection * (GetComponent<CircleCollider2D>().radius * transform.lossyScale.x));
 
-        Vector2 pointToCheck = new Vector2(pointXToCheck, pointYToCheck);
+        Vector2 pointToCheck = new Vector2(pointXToCheck, transform.position.y);
 
-        Collider2D firstOverlappingCollider = Physics2D.OverlapCircle(pointToCheck, 0.02f, groundMask);
+        Collider2D firstOverlappingCollider = Physics2D.OverlapCircle(pointToCheck, GetComponent<CircleCollider2D>().radius, groundMask);
 
-        if (firstOverlappingCollider == null)
+        if (firstOverlappingCollider != null)
         {
             moveDirection = moveDirection * -1;
         }
