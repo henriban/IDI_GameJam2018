@@ -8,21 +8,14 @@ public class KittyEars : MonoBehaviour, Hat_Interface {
         return "cat";
     }
 
-    public void onEquip() {
-        // TODO: reset player to default
-    }
+	public void onEquip()
+	{
+		Player.player.setWallJump(true);
+	}
 
-    public void unequip() {
-        return;
-    }
-
-    // Use this for initialization
-    void Start() {
-
-    }
-
-    // Update is called once per frame
-    void Update() {
-
-    }
+	public void unequip()
+	{
+		Player.player.setWallJump(false);
+	}
+    
 }
