@@ -27,6 +27,7 @@ public class Player : Character {
     private float faceDirection = 1.0f;
     private bool noJump = false;
     private bool doubleJump = false;
+	private bool wallJump = false;
     private bool canDoubleJump = false;
     private int numberOfJumps;
     private Vector2 startPos;
@@ -58,6 +59,18 @@ public class Player : Character {
         activeHat = 0;
         activeCostume = 0;
         numberOfJumps = 0;
+
+<<<<<<< HEAD
+		hats.Add(new KittyEars());
+        //costumes.Add(new BaeBlade());
+        //costumes.Add(new Fighter());
+=======
+        hats.Add(new Propeller());
+        hats.Add(new HorseHead());
+        costumes.Add(new BaeBlade());
+        costumes.Add(new Fighter());
+
+>>>>>>> 800ab1ab8ace26a4445f7edfc69bc5cd7ac937eb
 	}
 
 	private void Update() {
@@ -122,6 +135,18 @@ public class Player : Character {
         {
             canDoubleJump = true;
         }
+
+
+		if (Input.GetAxisRaw ("Vertical") > 0.0f && !canMoveHorizontaly (Input.GetAxis ("Horizontal")) && !canJump()) 
+		{
+			base.jump(rb2d);
+			print ("hey");
+			print (!canJump ());
+			print (!canMoveHorizontaly (Input.GetAxis ("Horizontal")));
+			print (Input.GetAxisRaw ("Vertical") > 0.0f);
+
+		}
+			
 
     }
 
@@ -227,6 +252,11 @@ public class Player : Character {
     {
         doubleJump = active;
     }
+
+	public void setWallJump(bool active)
+	{
+		wallJump = active;
+	}
 
     public void deathReset()
     {
