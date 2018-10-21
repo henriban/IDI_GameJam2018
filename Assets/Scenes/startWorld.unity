@@ -154,11 +154,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4186887877313842, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.00000047683716
+      value: -0.00000023841858
       objectReference: {fileID: 0}
     - target: {fileID: 4549954670764328, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.00000047683716
+      value: -0.00000023841858
       objectReference: {fileID: 0}
     - target: {fileID: 4186887877313842, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.y
@@ -170,11 +170,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4549954670764328, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.00000047683716
+      value: -0.00000023841858
       objectReference: {fileID: 0}
     - target: {fileID: 4186887877313842, guid: fb726764445c346668d18bb9eed726b5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.00000047683716
+      value: -0.00000023841858
       objectReference: {fileID: 0}
     - target: {fileID: 61737608223206556, guid: fb726764445c346668d18bb9eed726b5,
         type: 2}
@@ -1498,8 +1498,11 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2.3125, y: 2}
-  - {x: 1.3125, y: 2}
+  - {x: 1.5, y: 2.5}
+  - {x: -2.5, y: 2.5}
+  - {x: -2.5, y: 1.5}
+  - {x: 1.5, y: 1.5}
+  - {x: 1.5, y: 2.5}
 --- !u!251 &1577826067
 PlatformEffector2D:
   m_ObjectHideFlags: 0
