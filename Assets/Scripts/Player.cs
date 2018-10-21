@@ -93,8 +93,8 @@ public class Player : Character {
 		}
 
 		if(Input.GetKeyDown(KeyCode.Space)) {
-			costumes[activeCostume].onSpecial(this);
             animator.SetTrigger("action");
+			costumes[activeCostume].onSpecial(this);
 		}
 
         if(Input.GetAxisRaw("Horizontal") != 0)
